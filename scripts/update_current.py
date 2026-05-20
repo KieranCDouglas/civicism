@@ -92,6 +92,16 @@ def safe_float(val):
         return None
 
 
+def safe_int(val, default=0):
+    """Parse an int that may arrive as a float string (e.g. '200.0' from Voteview)."""
+    if not val:
+        return default
+    try:
+        return int(float(val))
+    except (ValueError, TypeError):
+        return default
+
+
 def update_members_index(congress):
     """Rebuild members-index.json from HSall_members.csv."""
     print("=== Updating members-index.json ===")
@@ -115,8 +125,8 @@ def update_members_index(congress):
 
     for row in reader:
         bioguide = row.get("bioguide_id", "").strip()
-        icpsr = int(row.get("icpsr", 0) or 0)
-        cong = int(row.get("congress", 0) or 0)
+        icpsr = safe_int(row.get("icpsr", 0))
+        cong = safe_int(row.get("congress", 0))
         chamber = row.get("chamber", "").strip()
         if chamber.lower() == "house":
             chamber = "H"
@@ -129,7 +139,7 @@ def update_members_index(congress):
         key = bioguide if bioguide else f"icpsr:{icpsr}"
 
         if key not in members:
-            party_code = int(row.get("party_code", 0) or 0)
+            party_code = safe_int(row.get("party_code", 0))
             members[key] = {
                 "bioguide": bioguide,
                 "name": format_name(row.get("bioname", "")),
@@ -153,7 +163,7 @@ def update_members_index(congress):
         if cong >= m["last_congress"]:
             m["icpsr"] = icpsr
             # Update party to most recent congress
-            party_code = int(row.get("party_code", 0) or 0)
+            party_code = safe_int(row.get("party_code", 0))
             m["party"] = party_map.get(party_code, "O")
 
         # Prefer Nokken-Poole (congress-specific) over DW-NOMINATE (career-wide)
