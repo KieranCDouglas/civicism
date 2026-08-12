@@ -363,6 +363,8 @@ def scrape_measures() -> list:
 
     if not state_positions:
         print("WARNING: No state sections found", file=sys.stderr)
+        print(f"DEBUG: response length={len(html)} chars", file=sys.stderr)
+        print(f"DEBUG: first 500 chars: {html[:500]!r}", file=sys.stderr)
         return []
 
     print(f"Found {len(state_positions)} state sections")
