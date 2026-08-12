@@ -12,10 +12,8 @@ Usage: python3 scripts/fetch_ballot_measures.py
 import datetime
 import json
 import re
-import ssl
 import sys
 import time
-import urllib.request
 from pathlib import Path
 from html.parser import HTMLParser
 
@@ -141,27 +139,55 @@ ENRICHMENT_FIELDS = (
 )
 
 
-ctx = ssl.create_default_context()
-ctx.check_hostname = False
-ctx.verify_mode = ssl.CERT_NONE
-
-
 def fetch_html(url, retries=3):
+    """
+    Fetch via headless Chromium (Playwright), not a plain HTTP client.
+    Ballotpedia's CloudFront distribution sits behind AWS WAF, which serves
+    a silent JS challenge (gokuProps/awsWafCookieDomainList) to non-browser
+    clients — a real UA string alone doesn't clear it since the challenge
+    requires executing JS to compute a token. A real browser engine solves
+    it automatically.
+    """
+    from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
+
+    def wait_for_content(page):
+        # The page never reaches full network-idle (continuous analytics/
+        # tracker pings), so wait for the actual state-section markup
+        # instead of an idle network.
+        try:
+            page.wait_for_selector("span.mw-headline", timeout=15000)
+        except PlaywrightTimeoutError:
+            pass
+
     for attempt in range(retries + 1):
         try:
-            req = urllib.request.Request(url, headers={
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                              "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-                "Accept-Language": "en-US,en;q=0.9",
-                "Sec-Fetch-Dest": "document",
-                "Sec-Fetch-Mode": "navigate",
-                "Sec-Fetch-Site": "none",
-                "Sec-Fetch-User": "?1",
-                "Upgrade-Insecure-Requests": "1",
-            })
-            with urllib.request.urlopen(req, context=ctx, timeout=60) as r:
-                return r.read().decode("utf-8", errors="replace")
+            with sync_playwright() as p:
+                browser = p.chromium.launch(
+                    args=["--disable-blink-features=AutomationControlled"]
+                )
+                try:
+                    context = browser.new_context(
+                        user_agent=(
+                            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                            "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+                        ),
+                        locale="en-US",
+                        viewport={"width": 1280, "height": 800},
+                    )
+                    page = context.new_page()
+                    page.goto(url, wait_until="domcontentloaded", timeout=45000)
+                    wait_for_content(page)
+
+                    # Give the WAF challenge a moment to resolve; reload once
+                    # if the state-section markup still isn't there yet.
+                    if "mw-headline" not in page.content():
+                        page.wait_for_timeout(4000)
+                        page.reload(wait_until="domcontentloaded", timeout=45000)
+                        wait_for_content(page)
+
+                    return page.content()
+                finally:
+                    browser.close()
         except Exception as e:
             if attempt < retries:
                 print(f"  retry {attempt+1}: {e}")

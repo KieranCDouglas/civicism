@@ -26,6 +26,11 @@ jobs:
       - name: Create data directories
         run: mkdir -p data
 
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          python3 -m playwright install chromium --with-deps
+
       - name: Fetch ballot measures from Ballotpedia
         run: python3 scripts/fetch_ballot_measures.py
 
