@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   refresh-ballot-measures:
@@ -52,4 +53,32 @@ jobs:
           else
             git commit -m "chore: refresh ballot measures [automated]"
             git push
+          fi
+
+      - name: Open issue on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Ballot measure refresh is failing"
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          EXISTING=$(gh issue list --repo "$GITHUB_REPOSITORY" --search "\"$TITLE\" in:title" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --repo "$GITHUB_REPOSITORY" \
+              --body "Still failing as of $(date -u +%Y-%m-%d). Run: $RUN_URL"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$TITLE" \
+              --body "The scheduled ballot measure refresh failed on $(date -u +%Y-%m-%d). Run: $RUN_URL — check the job logs for which step failed (scrape, enrichment, or commit). This issue stays open and gets a comment on each further failure until a successful run auto-closes it."
+          fi
+
+      - name: Close failure issue on success
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Ballot measure refresh is failing"
+          EXISTING=$(gh issue list --repo "$GITHUB_REPOSITORY" --search "\"$TITLE\" in:title" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue close "$EXISTING" --repo "$GITHUB_REPOSITORY" \
+              --comment "Refresh succeeded on $(date -u +%Y-%m-%d) — closing."
           fi
