@@ -741,12 +741,14 @@ def main():
 
     removed_count = 0
     for key, prev in existing.items():
-        if key not in scraped_keys and prev.get("status") not in ("Removed", "Passed", "Failed"):
+        if key in scraped_keys:
+            continue
+        if prev.get("status") not in ("Removed", "Passed", "Failed"):
             prev["status"] = "Removed"
             prev["removedAt"] = today
-            merged.append(prev)
             removed_count += 1
             print(f"  Marked as Removed: {prev['state']} — {prev['title']}")
+        merged.append(prev)  # preserve archived (already-terminal) entries too
 
     active  = [m for m in merged if m.get("status") != "Removed"]
     removed = [m for m in merged if m.get("status") == "Removed"]
