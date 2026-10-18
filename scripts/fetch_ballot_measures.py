@@ -297,10 +297,10 @@ def expand_type(abbr: str) -> str:
 
 def _parse_result(raw: str) -> str | None:
     """Parse Ballotpedia result column. Returns 'Passed', 'Failed', or None."""
-    text = raw.strip().lower()
-    if any(w in text for w in ("passed", "approved", "yes", "enacted")):
+    words = set(re.findall(r"[a-z]+", raw.lower()))
+    if words & {"passed", "approved", "yes", "enacted"}:
         return "Passed"
-    if any(w in text for w in ("failed", "rejected", "defeated", "no")):
+    if words & {"failed", "rejected", "defeated", "no"}:
         return "Failed"
     return None
 
@@ -366,7 +366,12 @@ def parse_table_rows(table_html: str) -> list[list[str]] | None:
             continue
         cells = []
         for cell_m in re.finditer(r"<td[^>]*>(.*?)</td>", row_html, re.DOTALL | re.IGNORECASE):
-            cells.append(decode_entities(strip_tags(cell_m.group(1))).strip())
+            cell = cell_m.group(1)
+            # Result cells are an icon (<img alt="Approved">) plus a hidden
+            # sort-key span — keep the alt text, drop the hidden span.
+            cell = re.sub(r'<span[^>]*display:\s*none[^>]*>.*?</span>', "", cell, flags=re.DOTALL | re.IGNORECASE)
+            cell = re.sub(r'<img[^>]*\balt="([^"]*)"[^>]*>', r" \1 ", cell, flags=re.IGNORECASE)
+            cells.append(decode_entities(strip_tags(cell)).strip())
         if cells:
             rows.append(cells)
     return rows

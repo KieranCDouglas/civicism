@@ -2,8 +2,9 @@ name: Refresh Ballot Measures
 
 on:
   schedule:
-    # Run on the 1st of every month at 7:00 AM UTC
-    - cron: '0 7 1 * *'
+    # Run every Monday at 7:00 AM UTC (weekly so certifications and
+    # election results land within days, not up to a month later)
+    - cron: '0 7 * * 1'
   workflow_dispatch: # Allow manual trigger
 
 permissions:
@@ -38,7 +39,13 @@ jobs:
       - name: Install enrichment dependencies
         run: pip install anthropic
 
+      # Enrichment is best-effort: if it fails (API key, credits, a bad
+      # response) we still commit the freshly scraped measures and results,
+      # then fail the job afterwards so the failure issue still gets opened.
+      # Unenriched measures are retried on the next run.
       - name: Enrich ballot measures with ideology scoring
+        id: enrich
+        continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python3 scripts/enrich_ballot_measures.py
@@ -54,6 +61,12 @@ jobs:
             git commit -m "chore: refresh ballot measures [automated]"
             git push
           fi
+
+      - name: Fail if enrichment failed
+        if: steps.enrich.outcome == 'failure'
+        run: |
+          echo "::error::Enrichment step failed — scraped data was committed without scores for new measures."
+          exit 1
 
       - name: Open issue on failure
         if: failure()
