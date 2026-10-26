@@ -1212,11 +1212,11 @@
     "framingNote": null
   },
   {
-    "id": "ky-2026-1",
+    "id": "ky-2026-2",
     "state": "Kentucky",
     "stateCode": "KY",
     "year": 2026,
-    "title": "Limit Governor's Pardon Power and Commutations Near General Election Amendment",
+    "title": "Constitutional Amendment 1",
     "summary": "Prohibit the governor from issuing a pardon or commuting a sentence 60 days prior to the gubernatorial election and until after the fifth Tuesday succeeding the election",
     "category": "fiscal_tax",
     "partisan": true,
@@ -1224,13 +1224,7 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Qualified",
     "result": null,
-    "electionDate": "2026-11-03",
-    "econScore": 0.0,
-    "socialScore": 0.65,
-    "econReasoning": "This measure has no direct economic dimension\u2014it does not address taxation, spending, regulation, or market mechanisms. It is purely a procedural governance matter.",
-    "socialReasoning": "This measure restricts executive clemency power near elections, reflecting conservative concerns about unchecked executive authority and skepticism toward broad pardon discretion. Restrictions on pardon/commutation powers align with right-leaning emphasis on crime control and limiting judicial/executive leniency.",
-    "framingFlag": "procedural_power_shift",
-    "framingNote": "The measure frames as election-integrity reform, but its structural effect is to constrain gubernatorial executive power during a politically sensitive window, shifting discretionary authority away from the executive branch during election periods."
+    "electionDate": "2026-11-03"
   },
   {
     "id": "la-2026-2",
@@ -3778,6 +3772,28 @@
     "framingFlag": null,
     "framingNote": null,
     "removedAt": "2026-10-19"
+  },
+  {
+    "id": "ky-2026-1",
+    "state": "Kentucky",
+    "stateCode": "KY",
+    "year": 2026,
+    "title": "Limit Governor's Pardon Power and Commutations Near General Election Amendment",
+    "summary": "Prohibit the governor from issuing a pardon or commuting a sentence 60 days prior to the gubernatorial election and until after the fifth Tuesday succeeding the election",
+    "category": "fiscal_tax",
+    "partisan": true,
+    "conservativeDirection": true,
+    "type": "Legislatively Referred Constitutional Amendment",
+    "status": "Removed",
+    "result": null,
+    "electionDate": "2026-11-03",
+    "econScore": 0.0,
+    "socialScore": 0.65,
+    "econReasoning": "This measure has no direct economic dimension\u2014it does not address taxation, spending, regulation, or market mechanisms. It is purely a procedural governance matter.",
+    "socialReasoning": "This measure restricts executive clemency power near elections, reflecting conservative concerns about unchecked executive authority and skepticism toward broad pardon discretion. Restrictions on pardon/commutation powers align with right-leaning emphasis on crime control and limiting judicial/executive leniency.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure frames as election-integrity reform, but its structural effect is to constrain gubernatorial executive power during a politically sensitive window, shifting discretionary authority away from the executive branch during election periods.",
+    "removedAt": "2026-10-26"
   },
   {
     "id": "la-2026-7",
