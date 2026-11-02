@@ -1736,7 +1736,7 @@
     "stateCode": "MI",
     "year": 2026,
     "title": "Proposal 2",
-    "summary": "Prohibit certain organizations and individuals\u2014such as regulated electric and gas utilities, contractors with over $250,000 annually in government contracts, and people and organizations with substantial connections to those utilities or contractors\u2014from making direct or indirect contributions to those who run for office, and also provide further regulations for campaign finance laws and spending on political communications",
+    "summary": "Prohibit certain regulated electric and gas utilities, government contractors with more than $250,000 annually in government contracts, and certain associated individuals and organizations from making specified campaign contributions; and expand campaign finance requirements to cover additional public communications about candidates or ballot questions, including certain communications that do not expressly advocate voting for or against them",
     "category": "fiscal_tax",
     "partisan": true,
     "conservativeDirection": true,
