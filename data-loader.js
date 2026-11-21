@@ -597,13 +597,46 @@
     return idPromise.then(function (resolvedId) {
       console.log("[Civicism] Fetching votes from GovTrack API for person", resolvedId);
       return fetchGovTrackVotes(resolvedId, null).then(function (gtVotes) {
-        console.log("[Civicism] Loaded", gtVotes.length, "votes from GovTrack API");
-        return { votes: gtVotes, source: "govtrack.us", totalCount: gtVotes.length };
+        if (gtVotes.length) {
+          console.log("[Civicism] Loaded", gtVotes.length, "votes from GovTrack API");
+          return { votes: gtVotes, source: "govtrack.us", totalCount: gtVotes.length };
+        }
+        // GovTrack unavailable (e.g. Cloudflare challenge / CORS) — use static Voteview data
+        console.warn("[Civicism] GovTrack returned no votes; falling back to Voteview static files");
+        return loadCurrentMemberVoteviewVotes(bioguideId);
       });
     }).catch(function (err) {
       console.error("[Civicism] Vote loading failed:", err.message, err.stack || err);
-      return { votes: [], source: "error", totalCount: 0 };
+      return loadCurrentMemberVoteviewVotes(bioguideId).catch(function () {
+        return { votes: [], source: "error", totalCount: 0 };
+      });
     });
   };
+
+  var CURRENT_CONGRESS = 119;
+
+  function getMembersIndex() {
+    if (_membersIndex) return Promise.resolve(_membersIndex);
+    return originalFetch.call(window, "./data/members-index.json")
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (data) {
+        if (!_membersIndex && Array.isArray(data)) _membersIndex = data;
+        return data || [];
+      });
+  }
+
+  /** Current-congress votes for a sitting member from data/votes/{H,S}119.json. */
+  function loadCurrentMemberVoteviewVotes(bioguideId) {
+    return getMembersIndex().then(function (index) {
+      var info = index.find(function (m) { return m.b === bioguideId; });
+      if (!info || info.i === undefined || info.i === null) {
+        return { votes: [], source: "none", totalCount: 0 };
+      }
+      return fetchVoteviewVotes(String(info.i), CURRENT_CONGRESS, CURRENT_CONGRESS).then(function (votes) {
+        console.log("[Civicism] Loaded", votes.length, "Voteview votes for", bioguideId);
+        return { votes: votes, source: "voteview.com", totalCount: votes.length };
+      });
+    });
+  }
 
 })();

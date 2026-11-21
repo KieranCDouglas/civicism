@@ -51,7 +51,13 @@ export default function MemberDetailPage() {
       if (!member?.govtrackId && loader) {
         return loader(bioguideId, null);
       }
-      return getMemberVotes(bioguideId, member?.govtrackId);
+      const result = await getMemberVotes(bioguideId, member?.govtrackId);
+      // GovTrack's API can be unreachable from the browser (Cloudflare challenge / CORS).
+      // data-loader.js retries GovTrack and falls back to the static Voteview files.
+      if (!result?.votes?.length && loader) {
+        return loader(bioguideId, member?.govtrackId);
+      }
+      return result;
     },
     enabled: !!member,
   });

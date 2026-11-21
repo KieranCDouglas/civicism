@@ -1524,12 +1524,54 @@
       "&offset=" + offset + "&order_by=-created";
     return fetch(url)
       .then(function (r) { return r.ok ? r.json() : null; })
+      .catch(function () { return null; })
       .then(function (d) {
-        var result = { votes: (d && d.objects) || [], total: (d && d.meta && d.meta.total_count) || 0 };
-        _recentVoteCache[key] = result;
+        if (d && d.objects && d.objects.length) {
+          return { votes: d.objects, total: (d.meta && d.meta.total_count) || 0 };
+        }
+        // GovTrack unavailable (Cloudflare challenge / CORS) — use static Voteview file
+        return fetchStaticRecentVotes(chamber, offset);
+      })
+      .then(function (result) {
+        if (result.votes.length) _recentVoteCache[key] = result;
         return result;
       })
       .catch(function () { return { votes: [], total: 0 }; });
+  }
+
+  var _staticRollcalls = {}; // "house" | "senate" → Promise<rollcall[] newest-first>
+
+  function fetchStaticRecentVotes(chamber, offset) {
+    if (!_staticRollcalls[chamber]) {
+      var file = "./data/votes/" + (chamber === "senate" ? "S" : "H") + "119.json";
+      _staticRollcalls[chamber] = fetch(file)
+        .then(function (r) { return r.ok ? r.json() : { r: [] }; })
+        .then(function (d) {
+          return (d.r || []).slice().sort(function (a, b) {
+            return (b[1] || "").localeCompare(a[1] || "") || (b[0] - a[0]);
+          });
+        })
+        .catch(function () { delete _staticRollcalls[chamber]; return []; });
+    }
+    return _staticRollcalls[chamber].then(function (rolls) {
+      // rc: [rollnum, date, bill_number, question, result, yea, nay, desc]
+      var votes = rolls.slice(offset, offset + RECENT_PER_PAGE).map(function (rc) {
+        return {
+          number: rc[0],
+          congress: 119,
+          chamber: chamber,
+          created: rc[1] || "",
+          question: rc[3] || "Roll Call Vote",
+          result: rc[4] || "",
+          total_plus: rc[5] || 0,
+          total_minus: rc[6] || 0,
+          related_bill: rc[2] ? { display_number: rc[2], title: rc[7] || "" } : null,
+          question_details: rc[2] ? undefined : (rc[7] || undefined),
+          _source: "voteview"
+        };
+      });
+      return { votes: votes, total: rolls.length };
+    });
   }
 
 
