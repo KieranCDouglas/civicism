@@ -10,6 +10,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  actions: read
 
 jobs:
   refresh-data:
@@ -52,10 +53,9 @@ jobs:
             git push
           fi
 
-  deploy:
+  build:
     needs: refresh-data
     runs-on: ubuntu-latest
-    environment: github-pages
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -78,12 +78,14 @@ jobs:
         working-directory: source/congress-tracker
 
       - name: Copy built assets to repo root assets/
-        run: cp source/congress-tracker/dist/public/assets/* assets/
+        run: |
+          rm -f assets/index-*.js assets/index-*.css
+          cp source/congress-tracker/dist/public/assets/* assets/
 
       - name: Update index.html asset references
         run: |
-          NEW_JS=$(ls assets/index-*.js | xargs basename)
-          NEW_CSS=$(ls assets/index-*.css | xargs basename)
+          NEW_JS=$(ls assets/index-*.js | head -1 | xargs basename)
+          NEW_CSS=$(ls assets/index-*.css | head -1 | xargs basename)
           sed -i "s|assets/index-[^\"]*\.js|assets/${NEW_JS}|g" index.html
           sed -i "s|assets/index-[^\"]*\.css|assets/${NEW_CSS}|g" index.html
 
@@ -94,6 +96,28 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
+
+  # Deploy runs in its own job: deploy-pages can miss an artifact uploaded
+  # moments earlier in the same job (actions/deploy-pages#451).
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: github-pages
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+    steps:
+      - name: Wait for Pages artifact to be listed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          url="${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts?name=github-pages"
+          for i in $(seq 1 24); do
+            n=$(curl -sf -H "Authorization: Bearer $GH_TOKEN" "$url" | jq '.total_count // 0')
+            if [ "${n:-0}" -ge 1 ]; then echo "artifact listed"; exit 0; fi
+            echo "not listed yet ($i)"; sleep 5
+          done
+          echo "::error::github-pages artifact never appeared"; exit 1
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
