@@ -60,7 +60,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 987299,
-    "noVotes": 522130
+    "noVotes": 522130,
+    "econScore": 0.0,
+    "socialScore": 0.0,
+    "econReasoning": "This measure concerns the procedural mechanism for filling a vacant lieutenant governor position and has no direct economic policy implications regarding taxation, spending, regulation, or market structure.",
+    "socialReasoning": "This measure addresses executive succession procedures and does not engage with social policy domains such as civil rights, criminal justice, abortion, LGBTQ+ issues, gun rights, voting access, or religious exemptions.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed as a neutral procedural requirement for elections but structurally shifts power by mandating election-based succession rather than allowing gubernatorial appointment, which could alter the governor's discretionary authority and state political dynamics."
   },
   {
     "id": "al-2026-8",
@@ -77,7 +83,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 759506,
-    "noVotes": 732160
+    "noVotes": 732160,
+    "econScore": 0.55,
+    "socialScore": 0.0,
+    "econReasoning": "This measure enables consolidation of county school districts, which aligns with conservative efficiency arguments about reducing administrative overhead and government spending. School district consolidation is traditionally supported by those favoring streamlined government operations and cost reduction.",
+    "socialReasoning": "The measure addresses procedural governance of school administration and contains no social policy dimensions related to abortion, LGBTQ+ rights, criminal justice, voting rights, drugs, religious exemptions, or other social axis issues.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "al-2026-9",
@@ -94,7 +106,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 974645,
-    "noVotes": 582918
+    "noVotes": 582918,
+    "econScore": 0.0,
+    "socialScore": 0.85,
+    "econReasoning": "This measure does not address taxation, spending, regulation, or market mechanisms, so it has no meaningful economic dimension.",
+    "socialReasoning": "Mandatory daily pledge of allegiance and student-led prayer in public schools align with conservative social policy priorities around religious expression in public institutions and traditional civic/patriotic practices. These positions are predominantly supported by Republican and right-leaning constituencies.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "al-2026-10",
@@ -111,7 +129,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 909259,
-    "noVotes": 642958
+    "noVotes": 642958,
+    "econScore": 0.0,
+    "socialScore": 0.75,
+    "econReasoning": "This measure has no direct economic dimension\u2014it mandates a ceremonial practice in public schools without affecting taxation, spending priorities, or market regulation.",
+    "socialReasoning": "Mandatory patriotic exercises in public schools align with conservative social preferences for national symbols and traditional expressions of patriotism, while secular or progressive voters typically oppose state-mandated religious or quasi-religious exercises in schools as a church-state separation concern.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "ak-2026-6",
@@ -381,7 +405,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 597481,
-    "noVotes": 267343
+    "noVotes": 267343,
+    "econScore": 0.0,
+    "socialScore": 0.95,
+    "econReasoning": "This measure has no direct economic dimension\u2014it addresses voting eligibility criteria rather than taxation, spending, regulation, or market policy.",
+    "socialReasoning": "Citizenship requirements for voting are a core conservative/right-aligned position on immigration and voting access, strongly aligned with Republican electoral priorities and restrictive immigration policy frameworks.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "ar-2026-6",
@@ -398,7 +428,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 614054,
-    "noVotes": 253197
+    "noVotes": 253197,
+    "econScore": 0.0,
+    "socialScore": 0.85,
+    "econReasoning": "This measure has no direct economic dimension\u2014it addresses constitutional gun rights rather than taxation, spending, regulation, or market policy.",
+    "socialReasoning": "Gun rights protections are a core conservative/right-aligned position in U.S. politics. This amendment explicitly enshrines Second Amendment protections as a 'natural, fundamental, and individual right,' which aligns with Republican and conservative priorities.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "ar-2026-7",
@@ -415,7 +451,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 419504,
-    "noVotes": 431330
+    "noVotes": 431330,
+    "econScore": 0.65,
+    "socialScore": 0.0,
+    "econReasoning": "This measure authorizes government spending and loan/grant programs for economic development, which could support either interventionist or market-friendly approaches depending on implementation. However, the focus on Economic Development Districts and direct government capital allocation aligns more with Republican-favored business incentive programs and public-private development initiatives common in conservative states.",
+    "socialReasoning": "The measure contains no provisions related to social policy, civil rights, criminal justice, reproductive rights, gun rights, voting access, or other social axis issues.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "ar-2026-8",
@@ -432,7 +474,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 476111,
-    "noVotes": 368136
+    "noVotes": 368136,
+    "econScore": -0.65,
+    "socialScore": 0.0,
+    "econReasoning": "This measure authorizes $500 million in state debt-financed infrastructure spending on water systems and environmental projects, which aligns with public investment and government provision of essential services\u2014a left-leaning economic position. However, it uses general obligation bonds rather than direct taxation or redistribution, moderating the left-wing score.",
+    "socialReasoning": "Water infrastructure and environmental management have no direct connection to social issues such as abortion, LGBTQ+ rights, gun rights, or criminal justice. This measure is neutral on the social axis.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "ca-2026-6",
@@ -769,7 +817,13 @@
     "type": "Bond Issue",
     "status": "Qualified",
     "result": null,
-    "electionDate": "2028-03-07"
+    "electionDate": "2028-03-07",
+    "econScore": -0.75,
+    "socialScore": 0.0,
+    "econReasoning": "This bond measure represents significant public sector investment in research and development funded through debt issuance, aligning with progressive preferences for public spending on scientific infrastructure. The measure relies on government direction and funding rather than market-driven mechanisms, characteristic of left-leaning fiscal policy.",
+    "socialReasoning": "The measure has no material social policy dimension; it addresses research funding and does not implicate abortion, gun rights, LGBTQ+ protections, criminal justice, or other social axis issues.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "ca-2028-1",
@@ -784,7 +838,13 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Qualified",
     "result": null,
-    "electionDate": "2028-11-07"
+    "electionDate": "2028-11-07",
+    "econScore": 0.0,
+    "socialScore": -0.75,
+    "econReasoning": "This measure has no direct economic dimension regarding taxation, spending, regulation, or market mechanisms. It is purely about the scope and application of existing anti-discrimination policy.",
+    "socialReasoning": "This measure removes higher education from California's affirmative action ban (Proposition 209), thereby permitting race-conscious admissions policies in universities. This aligns with progressive/Democratic positions favoring remedial racial equity measures and would be opposed by conservatives who support colorblind anti-discrimination principles.",
+    "framingFlag": "rights_framing",
+    "framingNote": "The title frames this as 'removing a ban,' which obscures that the structural effect is to restore race-based preferential treatment authority to universities\u2014a reframing that affects how voters perceive the measure's actual policy content."
   },
   {
     "id": "ca-2028-2",
@@ -799,7 +859,13 @@
     "type": "Citizen-Initiated Constitutional Amendment",
     "status": "Qualified",
     "result": null,
-    "electionDate": "2028-11-07"
+    "electionDate": "2028-11-07",
+    "econScore": -0.65,
+    "socialScore": 0.0,
+    "econReasoning": "This measure creates a public assistance program funded through government to help lower-income state university employees achieve homeownership, which aligns with progressive redistribution and public benefit expansion. The program uses state resources to subsidize housing access for a specific worker class rather than relying on market mechanisms.",
+    "socialReasoning": "This measure addresses economic opportunity and housing access but does not engage with traditional social axis issues such as abortion, gun rights, LGBTQ+ protections, criminal justice, or voting rights.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "co-2026-9",
@@ -816,7 +882,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 1189572,
-    "noVotes": 1473720
+    "noVotes": 1473720,
+    "econScore": 0.0,
+    "socialScore": 0.85,
+    "econReasoning": "This measure does not contain significant economic provisions regarding taxation, spending, regulation, or market mechanisms. The administrative requirement to notify DHS has minimal fiscal dimension relative to its policy content.",
+    "socialReasoning": "This measure mandates law enforcement notification to federal immigration authorities for individuals charged with crimes of violence or with prior felonies when immigration status is undetermined. This aligns strongly with conservative immigration restriction and law-and-order positions, as it expands coordination between state and federal authorities to identify and potentially deport non-citizens involved in criminal activity.",
+    "framingFlag": "scope_expansion",
+    "framingNote": "The measure uses 'crimes of violence' as an anchoring justification but structurally requires notification for ANY person with a prior felony conviction whose immigration status cannot be determined, potentially capturing individuals far beyond serious violent offenders."
   },
   {
     "id": "co-2026-10",
@@ -833,7 +905,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 1219828,
-    "noVotes": 1416531
+    "noVotes": 1416531,
+    "econScore": 0.72,
+    "socialScore": 0.0,
+    "econReasoning": "This measure protects the right to purchase and distribute natural gas, opposing regulatory restrictions that would phase out or ban natural gas for cooking and heating. The amendment favors market access and private utility operations over government-mandated energy transitions, aligning with deregulatory and free-market positions.",
+    "socialReasoning": "The measure does not engage with social issues such as abortion, LGBTQ+ rights, criminal justice, voting rights, drugs, religious exemptions, or gun rights. It is purely an economic and energy policy question.",
+    "framingFlag": "rights_framing",
+    "framingNote": "The measure frames a protection of market access and commercial activity as a 'constitutional right' for consumers and utilities, which characterizes a regulatory exemption or barrier-to-restriction as an affirmative right rather than simply prohibiting government action."
   },
   {
     "id": "co-2026-11",
@@ -850,7 +928,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 1191671,
-    "noVotes": 1448259
+    "noVotes": 1448259,
+    "econScore": 0.0,
+    "socialScore": 0.65,
+    "econReasoning": "The measure does not contain significant redistributive, tax, regulatory, or market-driven economic provisions; it establishes a constitutional right without direct fiscal implications.",
+    "socialReasoning": "The measure protects hunting, fishing, and wildlife-taking rights using traditional methods, which aligns with conservative and rural interests typically associated with right-wing political positioning. This frames individual liberty to engage in traditional resource extraction activities, a characteristic conservative social position.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "co-2026-12",
@@ -867,7 +951,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 976240,
-    "noVotes": 1689981
+    "noVotes": 1689981,
+    "econScore": 0.0,
+    "socialScore": 0.85,
+    "econReasoning": "This measure has no significant economic dimension; it addresses procedural voting requirements rather than taxation, spending, or market regulation.",
+    "socialReasoning": "Voter ID requirements for mail-in ballots align with conservative positions on election security and voter verification, which are core to the right's electoral approach in U.S. politics.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "co-2026-13",
@@ -884,7 +974,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 1353205,
-    "noVotes": 1292407
+    "noVotes": 1292407,
+    "econScore": 0.0,
+    "socialScore": 0.0,
+    "econReasoning": "This measure addresses ballot clarity and readability standards, which has no direct economic dimension regarding taxation, spending, redistribution, or market regulation.",
+    "socialReasoning": "Plain language requirements for ballot measures do not advance or restrict any characteristic social policy positions (abortion, gun rights, voting rights, LGBTQ+ protections, etc.).",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "co-2026-14",
@@ -901,7 +997,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 1214969,
-    "noVotes": 1376879
+    "noVotes": 1376879,
+    "econScore": 0.0,
+    "socialScore": -0.65,
+    "econReasoning": "This measure has no direct economic dimension regarding taxation, spending, or market regulation. It is purely procedural regarding redistricting authority.",
+    "socialReasoning": "Democrats typically support independent redistricting commissions and judicial oversight as a means to reduce partisan gerrymandering and protect voting representation; Republicans generally oppose such measures as they typically benefit Democratic electoral interests. This aligns with the left/progressive position on voting rights and fair representation.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed as a neutral 'nonpolitical commission' reform, but structurally shifts power from the state legislature (where Republicans have influence) to an independent commission and the state supreme court, fundamentally altering the institutional balance on redistricting authority."
   },
   {
     "id": "co-2026-15",
@@ -918,7 +1020,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 1372797,
-    "noVotes": 1281499
+    "noVotes": 1281499,
+    "econScore": -0.78,
+    "socialScore": 0.0,
+    "econReasoning": "A graduated income tax system is a core progressive fiscal policy that increases taxation on higher earners to fund public programs and reduce wealth inequality. This aligns strongly with Democratic/left economic positions on progressive taxation and redistribution.",
+    "socialReasoning": "The measure addresses only tax structure and contains no provisions related to social issues such as abortion, LGBTQ+ rights, criminal justice, voting, drugs, religion, or guns.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "co-2026-16",
@@ -935,7 +1043,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 1391310,
-    "noVotes": 1251813
+    "noVotes": 1251813,
+    "econScore": 0.0,
+    "socialScore": 0.85,
+    "econReasoning": "The measure does not contain significant economic provisions regarding taxation, spending, regulation, or market mechanisms, so it scores neutral on the economic axis.",
+    "socialReasoning": "The measure increases criminal penalties for fentanyl-related offenses, limits sentencing exceptions, and mandates treatment requirements\u2014all positions aligned with conservative criminal justice approaches favoring stricter enforcement and reduced judicial discretion over drug crimes.",
+    "framingFlag": "mandatory_minimum",
+    "framingNote": "The measure's framing emphasizes public health protection and victim safety from fentanyl deaths, but its structural effect is to restrict judicial discretion in sentencing and mandate penalties, which is characteristic of mandatory minimum legislation."
   },
   {
     "id": "co-2026-17",
@@ -952,7 +1066,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 1641772,
-    "noVotes": 1000693
+    "noVotes": 1000693,
+    "econScore": 0.0,
+    "socialScore": 0.85,
+    "econReasoning": "This measure has no significant economic dimension; it addresses criminal sentencing policy rather than taxation, spending, regulation, or market-driven mechanisms.",
+    "socialReasoning": "Mandatory life imprisonment without parole for child sex trafficking convictions aligns with conservative criminal justice positions favoring mandatory minimums, enhanced incarceration, and removal of judicial discretion\u2014positions consistently associated with the right side of the U.S. political spectrum.",
+    "framingFlag": "mandatory_minimum",
+    "framingNote": "The measure frames the policy as child protection but structurally mandates sentencing without judicial discretion, eliminating judicial flexibility that might otherwise exist in extreme cases."
   },
   {
     "id": "co-2026-18",
@@ -969,7 +1089,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 1379283,
-    "noVotes": 1265159
+    "noVotes": 1265159,
+    "econScore": 0.0,
+    "socialScore": 0.85,
+    "econReasoning": "This measure has no direct economic dimension\u2014it does not involve taxation, spending, regulation of markets, or redistribution of resources.",
+    "socialReasoning": "This measure restricts participation in school sports based on biological sex and explicitly targets transgender athletes by requiring sex-based team separation. Such policies are predominantly supported by conservative Republicans and opposed by progressive Democrats, placing it firmly on the social-conservative axis.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "co-2026-19",
@@ -986,7 +1112,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 1373942,
-    "noVotes": 1273599
+    "noVotes": 1273599,
+    "econScore": 0.0,
+    "socialScore": 0.85,
+    "econReasoning": "This measure does not substantively address taxation, spending, regulation of markets, or economic redistribution. It operates within the healthcare system without changing its economic structure.",
+    "socialReasoning": "This measure restricts medical procedures for transgender and gender-nonconforming minors, aligning with conservative social policy that opposes LGBTQ+ affirming healthcare. Such restrictions are core to the right's social agenda and directly opposed by progressive advocates for LGBTQ+ rights and bodily autonomy.",
+    "framingFlag": "rights_framing",
+    "framingNote": "The measure frames a medical restriction as 'prohibition' (which is neutral terminology), but uses the phrase 'perception of sex or gender' to characterize gender dysphoria in a way that subtly delegitimizes the medical condition being treated, potentially obscuring from voters that this prevents evidence-based medical care that some practitioners support."
   },
   {
     "id": "co-2026-20",
@@ -1003,7 +1135,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 1230911,
-    "noVotes": 1379194
+    "noVotes": 1379194,
+    "econScore": 0.85,
+    "socialScore": 0.0,
+    "econReasoning": "This measure imposes a cap on income tax rates, which is a core Republican/conservative tax-cutting policy that reduces government revenue and constrains the ability to fund public programs through progressive taxation. Such tax caps align strongly with market-driven, anti-redistribution economic positions.",
+    "socialReasoning": "This measure addresses fiscal policy and contains no provisions regarding social issues such as abortion, LGBTQ+ rights, criminal justice, voting, drugs, religion, or gun rights.",
+    "framingFlag": "revenue_impact",
+    "framingNote": "The measure's title frames a 'cap' in neutral terms, but structurally it functions as a tax reduction mechanism that reduces state revenue available for public services, with the fiscal impact obscured by the capping language rather than explicit rate reduction framing."
   },
   {
     "id": "co-2026-21",
@@ -1020,7 +1158,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 1366062,
-    "noVotes": 1261003
+    "noVotes": 1261003,
+    "econScore": -0.65,
+    "socialScore": 0.0,
+    "econReasoning": "This measure retains and dedicates sales tax revenue to public spending on environmental and recreation purposes, which aligns with progressive fiscal approaches that use taxation to fund public goods and environmental protection rather than returning revenue through tax cuts.",
+    "socialReasoning": "The measure addresses environmental conservation and outdoor recreation, which are not primarily aligned with either conservative or progressive social values in the abortion, gun rights, criminal justice, or identity politics dimensions.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "co-2026-6",
@@ -1058,7 +1202,13 @@
     "type": "Advisory Constitutional Convention Question",
     "status": "Qualified",
     "result": null,
-    "electionDate": "2028-11-07"
+    "electionDate": "2028-11-07",
+    "econScore": 0.0,
+    "socialScore": 0.0,
+    "econReasoning": "A constitutional convention question is a procedural meta-measure about whether to convene a deliberative body; it does not itself propose specific economic policies like taxation, spending, or regulation.",
+    "socialReasoning": "Similarly, this measure is procedural and does not substantively address social policy positions such as abortion, gun rights, voting access, or other polarizing social issues.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "While framed neutrally as a process question, a constitutional convention represents a substantial structural shift in power by potentially allowing comprehensive revision of state governance authority beyond normal amendment procedures."
   },
   {
     "id": "fl-2026-4",
@@ -1075,7 +1225,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 3174295,
-    "noVotes": 4586161
+    "noVotes": 4586161,
+    "econScore": 0.65,
+    "socialScore": 0.0,
+    "econReasoning": "This measure increases the state's budget stabilization (rainy day) fund cap from 10% to 25% of net general revenue, which aligns with conservative fiscal policy favoring reserves, reduced spending flexibility, and constrained government expenditure. The policy reflects Republican-preferred approaches to government budgeting discipline and fiscal conservatism.",
+    "socialReasoning": "This measure contains no social policy dimension\u2014it addresses only fiscal and budgetary mechanics with no bearing on abortion, gun rights, criminal justice, voting, LGBTQ+ issues, immigration, or other social axes.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "fl-2026-5",
@@ -1092,7 +1248,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 4547646,
-    "noVotes": 3264960
+    "noVotes": 3264960,
+    "econScore": 0.75,
+    "socialScore": 0.0,
+    "econReasoning": "This measure provides a tax exemption for agricultural property, reducing the tax base and government revenue while benefiting a specific economic sector\u2014a tax cut aligned with conservative fiscal policy. Agricultural property tax exemptions are typically championed by right-leaning interests and reduce overall taxation burden on property owners.",
+    "socialReasoning": "This measure has no meaningful social dimension; it addresses only property tax treatment of agricultural equipment and does not implicate social issues such as abortion, LGBTQ+ rights, criminal justice, voting rights, drugs, religion, or other cultural debates.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "fl-2026-3",
@@ -1132,7 +1294,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 2163712,
-    "noVotes": 1854433
+    "noVotes": 1854433,
+    "econScore": 0.72,
+    "socialScore": 0.0,
+    "econReasoning": "This measure provides a tax benefit to agricultural and timber property owners by doubling the acreage threshold for preferential tax assessment, reducing their tax burden. This aligns with right-leaning positions favoring tax cuts and incentives for property owners and agricultural interests.",
+    "socialReasoning": "This measure has no significant social policy dimension; it is purely a fiscal and property tax matter with no bearing on social issues.",
+    "framingFlag": "revenue_impact",
+    "framingNote": "The measure frames the benefit as 'conservation use' property taxation, which emphasizes environmental stewardship, but the structural effect is primarily a tax reduction for large agricultural and timber landowners rather than a conservation mandate or outcome."
   },
   {
     "id": "ga-2026-5",
@@ -1149,7 +1317,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 2752872,
-    "noVotes": 1274297
+    "noVotes": 1274297,
+    "econScore": 0.0,
+    "socialScore": 0.0,
+    "econReasoning": "Nonpartisan judicial elections have no direct economic dimension regarding taxation, spending, regulation, or market policy. The measure is procedurally focused rather than economically substantive.",
+    "socialReasoning": "Nonpartisan elections for probate judges do not directly implicate social issues such as abortion, LGBTQ+ rights, criminal justice, voting rights, or other core left-right social divides. The measure is structurally neutral on these dimensions.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "ga-2026-6",
@@ -1166,7 +1340,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 3135317,
-    "noVotes": 898237
+    "noVotes": 898237,
+    "econScore": 0.15,
+    "socialScore": 0.0,
+    "econReasoning": "This measure allows the legislature to create a dedicated fund and authorize revenue for 9-1-1 services, which is a pragmatic public safety investment rather than a broad tax cut or expansion of redistributive programs. The funding mechanism is neutral-to-slightly-conservative as it represents targeted government spending rather than progressive taxation or broad social redistribution.",
+    "socialReasoning": "The measure has no significant social policy dimension\u2014it addresses emergency services infrastructure and funding, which is not aligned with any major social conservative or progressive issue.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "hi-2026-3",
@@ -1183,7 +1363,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 227129,
-    "noVotes": 133249
+    "noVotes": 133249,
+    "econScore": 0.0,
+    "socialScore": 0.35,
+    "econReasoning": "This measure does not substantively affect taxation, public spending, regulation, or market mechanisms. It is a procedural adjustment to the judicial appointment review timeline with no direct fiscal or economic policy implications.",
+    "socialReasoning": "Extending the Senate's appointment review window from 30 to 60 days moderately favors institutional deliberation and potentially reduces the pace of judicial confirmations. This procedural constraint on appointment speed aligns somewhat with conservative preferences for slower institutional change and judicial caution, though the effect is modest and institutional rather than directly social-policy oriented.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed neutrally as a timeframe extension, but it structurally shifts power by giving the Senate (and opponents of appointments) additional time to block or delay judicial appointments during recess periods, particularly affecting appointments when the chamber is not in regular session."
   },
   {
     "id": "hi-2026-4",
@@ -1200,7 +1386,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 242255,
-    "noVotes": 117758
+    "noVotes": 117758,
+    "econScore": -0.65,
+    "socialScore": 0.0,
+    "econReasoning": "This measure authorizes public borrowing for housing infrastructure and community development, representing government-directed investment in public works rather than market-driven solutions. The use of municipal bonds for housing infrastructure aligns with progressive fiscal approaches to addressing housing supply and affordability through public sector intervention.",
+    "socialReasoning": "This measure contains no provisions related to social issues such as abortion, LGBTQ+ rights, gun rights, criminal justice, voting rights, or other traditional social policy dimensions.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "hi-2028-1",
@@ -1215,7 +1407,13 @@
     "type": "Advisory Constitutional Convention Question",
     "status": "Qualified",
     "result": null,
-    "electionDate": "2028-11-07"
+    "electionDate": "2028-11-07",
+    "econScore": 0.0,
+    "socialScore": 0.0,
+    "econReasoning": "A constitutional convention question is a procedural mechanism for potentially revising state governance structures and does not inherently propose specific economic policies like taxation, spending, or regulation.",
+    "socialReasoning": "This measure is procedural in nature and does not directly address substantive social policy issues such as abortion, LGBTQ+ rights, criminal justice, or voting rights; any social implications would depend on what a convention might propose.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "id-2026-1",
@@ -1320,7 +1518,13 @@
     "type": "Advisory Constitutional Convention Question",
     "status": "Qualified",
     "result": null,
-    "electionDate": "2028-11-07"
+    "electionDate": "2028-11-07",
+    "econScore": 0.0,
+    "socialScore": 0.0,
+    "econReasoning": "A constitutional convention question is a procedural mechanism for potentially revising state governance and does not itself propose specific economic policies such as taxation, regulation, or public spending.",
+    "socialReasoning": "This measure is procedural in nature and does not directly address social policy issues such as abortion, LGBTQ+ rights, criminal justice, voting rights, or other social regulation matters.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "While framed as a neutral procedural question about convening a convention, approval would structurally shift power by enabling potential wholesale revision of the state constitution, which could have material consequences for economic and social policy that remain undisclosed to voters at the ballot."
   },
   {
     "id": "in-2026-1",
@@ -1360,7 +1564,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 1144687,
-    "noVotes": 684054
+    "noVotes": 684054,
+    "econScore": 0.0,
+    "socialScore": 0.0,
+    "econReasoning": "This measure does not address taxation, spending, regulation, or market mechanisms. It is a residency requirement for judicial officers with no direct economic policy dimension.",
+    "socialReasoning": "This measure does not implicate abortion, LGBTQ+ rights, criminal justice sentencing, voting access, drug policy, religious exemptions, or other canonical social policy domains. It is a narrow procedural requirement for court jurisdiction.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "ia-2026-1",
@@ -1446,7 +1656,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 900017,
-    "noVotes": 373403
+    "noVotes": 373403,
+    "econScore": 0.0,
+    "socialScore": 0.65,
+    "econReasoning": "This measure has no direct economic dimension regarding taxation, spending, regulation, or market policy. It is a procedural constraint on executive power with no fiscal implications.",
+    "socialReasoning": "The measure restricts gubernatorial clemency power around elections, which aligns with conservative criminal justice positions favoring reduced executive discretion in sentencing matters and constraining mechanisms that could appear to undermine sentence enforcement.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed as an election integrity safeguard but structurally constrains executive power by removing gubernatorial discretion during a defined period, shifting de facto sentencing authority away from the executive branch."
   },
   {
     "id": "la-2026-2",
@@ -1578,7 +1794,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 1071821,
-    "noVotes": 371398
+    "noVotes": 371398,
+    "econScore": -0.35,
+    "socialScore": 0.0,
+    "econReasoning": "This measure reduces tax revenue by allowing homestead exemption transfers, which is a tax benefit expansion. However, it is narrowly targeted to a specific veteran demographic rather than a broad tax cut, and the fiscal impact is likely modest.",
+    "socialReasoning": "This measure addresses veteran benefits and property rights with no meaningful connection to social issues like abortion, LGBTQ+ rights, criminal justice, or other polarizing social dimensions.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "la-2026-17",
@@ -1595,7 +1817,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 659484,
-    "noVotes": 749477
+    "noVotes": 749477,
+    "econScore": 0.72,
+    "socialScore": 0.0,
+    "econReasoning": "This measure creates a targeted tax exemption for rehabilitated blighted property, which aligns with conservative tax-cutting and market-driven approaches to urban renewal rather than direct government spending or regulation. The exemption incentivizes private investment in property rehabilitation through reduced tax burden, a mechanism favored by right-leaning fiscal policy.",
+    "socialReasoning": "The measure addresses urban property redevelopment and contains no provisions related to social issues such as abortion, LGBTQ+ rights, criminal justice, voting rights, drugs, religion, or other culture-war topics.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "la-2026-18",
@@ -1612,7 +1840,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 596656,
-    "noVotes": 824812
+    "noVotes": 824812,
+    "econScore": 0.65,
+    "socialScore": 0.0,
+    "econReasoning": "This measure allows taxing authorities to increase property tax millage rates above previous year levels, enabling higher tax revenue collection. This aligns with conservative opposition to tax increases and government revenue expansion, though the measure itself is permissive rather than restrictive.",
+    "socialReasoning": "This measure contains no provisions related to social policy, criminal justice, voting rights, abortion, LGBTQ+ issues, drug policy, or any other social axis dimension.",
+    "framingFlag": "revenue_impact",
+    "framingNote": "The measure's framing emphasizes 'authorization' and constitutional limits, which may obscure to voters that the primary structural effect is enabling local governments to impose higher property tax burdens on taxpayers."
   },
   {
     "id": "la-2026-19",
@@ -1629,7 +1863,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 972731,
-    "noVotes": 461882
+    "noVotes": 461882,
+    "econScore": 0.0,
+    "socialScore": 0.85,
+    "econReasoning": "This measure has no direct economic dimension\u2014it does not involve taxation, spending, regulation of markets, or redistribution of resources.",
+    "socialReasoning": "This amendment restricts bail eligibility for defendants convicted of aggravated offenses against minors, reflecting a conservative criminal justice stance that prioritizes victim protection and public safety over judicial discretion in bail determination. This aligns with Republican-backed tough-on-crime positions, mandatory detention policies, and restrictions on defendant flexibility in the criminal justice process.",
+    "framingFlag": "mandatory_minimum",
+    "framingNote": "The measure frames the policy as victim protection for minors (emotionally compelling), but the structural effect is removal of judicial discretion over post-conviction bail decisions for an entire category of offenders, which constrains judicial flexibility regardless of individual circumstances."
   },
   {
     "id": "la-2026-20",
@@ -1646,7 +1886,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 801623,
-    "noVotes": 631679
+    "noVotes": 631679,
+    "econScore": 0.0,
+    "socialScore": 0.0,
+    "econReasoning": "Term limit changes have no direct economic policy dimension regarding taxation, spending, regulation, or market mechanisms. The measure affects governance structure rather than fiscal policy.",
+    "socialReasoning": "This amendment addresses executive branch succession rules and does not implicate social issues such as abortion, LGBTQ+ rights, criminal justice, voting rights, drug policy, or religious protections.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed neutrally as a term limit change, but it structurally shifts power by allowing a governor to serve non-consecutively, potentially extending executive influence across multiple political eras and altering the rotation of political leadership in the state."
   },
   {
     "id": "la-2026-21",
@@ -1663,7 +1909,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 526852,
-    "noVotes": 875000
+    "noVotes": 875000,
+    "econScore": 0.65,
+    "socialScore": 0.0,
+    "econReasoning": "This measure removes a constraint on how state retirement systems allocate nonrecurring funds, providing greater flexibility in fiscal management and potentially allowing more market-oriented or discretionary allocation strategies. The removal of a mandatory prioritization rule aligns with conservative preferences for reduced regulatory constraints on financial decision-making.",
+    "socialReasoning": "This measure concerns only technical pension fund management and has no direct bearing on social issues such as abortion, gun rights, LGBTQ+ protections, criminal justice, voting rights, or other socially divisive topics.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "la-2026-22",
@@ -1680,7 +1932,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 900864,
-    "noVotes": 516528
+    "noVotes": 516528,
+    "econScore": 0.72,
+    "socialScore": 0.0,
+    "econReasoning": "This measure reduces tax revenue by exempting up to $30,000 of assessed property value for seniors, which aligns with conservative tax-cut philosophy. The exemption is regressive in that it benefits property owners and increases with age, characteristic of Republican-favored tax relief structures.",
+    "socialReasoning": "The measure has no meaningful social dimension\u2014it is purely a fiscal/tax policy affecting seniors' property tax obligations and does not engage social issues like abortion, LGBTQ+ rights, criminal justice, voting rights, or other social axis dimensions.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "la-2026-23",
@@ -1697,7 +1955,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 924795,
-    "noVotes": 492522
+    "noVotes": 492522,
+    "econScore": -0.65,
+    "socialScore": 0.0,
+    "econReasoning": "This measure authorizes public funding for maintenance of private utility customer water lines affected by hazardous materials, representing a public subsidy for infrastructure that could otherwise be maintained by private parties or utility companies. This aligns with expanded public spending and intervention in market-based service delivery, characteristic of left-leaning fiscal positions.",
+    "socialReasoning": "The measure addresses utility infrastructure and environmental contamination remediation, which carries no discernible alignment with traditional social/cultural wedge issues that differentiate left and right positions.",
+    "framingFlag": "revenue_impact",
+    "framingNote": "The measure frames public funding as addressing a specific hazard problem (hazardous materials), which may obscure the broader fiscal commitment and shift of maintenance costs from private utility operators and customers to public funds."
   },
   {
     "id": "la-2026-24",
@@ -1714,7 +1978,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 877475,
-    "noVotes": 535187
+    "noVotes": 535187,
+    "econScore": 0.75,
+    "socialScore": 0.65,
+    "econReasoning": "This measure protects private property rights against foreign seizure, which aligns with conservative emphasis on property ownership and market-driven protection of assets. The prohibition on expropriation reflects right-leaning prioritization of private ownership over government redistribution or foreign control.",
+    "socialReasoning": "The measure frames national security and sovereignty concerns through restriction of foreign adversary activity, resonating with conservative positions on national security, foreign threat mitigation, and protection of American interests against external actors.",
+    "framingFlag": "scope_expansion",
+    "framingNote": "The measure uses 'foreign adversary' and 'agents of foreign adversary' as anchors but delegates definition to law, potentially allowing the scope of restricted actors and property to expand beyond traditional espionage concerns through subsequent legislation."
   },
   {
     "id": "la-2026-25",
@@ -1731,7 +2001,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 824244,
-    "noVotes": 592172
+    "noVotes": 592172,
+    "econScore": 0.65,
+    "socialScore": 0.0,
+    "econReasoning": "Raising the income limit for a property tax special assessment is a tax relief measure that benefits middle-class homeowners, aligning with conservative tax-cut priorities. This expands eligibility for a favorable tax treatment, reducing effective tax burdens on a broader income segment.",
+    "socialReasoning": "This measure has no meaningful social policy dimension; it is purely a fiscal/tax administration matter with no bearing on social issues.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "la-2027-1",
@@ -1746,7 +2022,13 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Qualified",
     "result": null,
-    "electionDate": "2027-04-17"
+    "electionDate": "2027-04-17",
+    "econScore": 0.0,
+    "socialScore": 0.0,
+    "econReasoning": "This measure concerns the structural jurisdiction of the Louisiana Supreme Court over lawyer disciplinary proceedings and has no direct economic impact on taxation, spending, or market regulation.",
+    "socialReasoning": "This measure addresses procedural authority for professional discipline of lawyers and does not implicate social issues such as abortion, voting rights, criminal justice reform, or other traditional left-right social policy divides.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed narrowly as a technical expansion of judicial jurisdiction, but it structurally shifts disciplinary authority over out-of-state or non-bar-member lawyers from other bodies to the state supreme court, which could have material implications for the balance of institutional power in legal regulation."
   },
   {
     "id": "md-2026-5",
@@ -1763,7 +2045,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 1584338,
-    "noVotes": 497018
+    "noVotes": 497018,
+    "econScore": -0.75,
+    "socialScore": 0.0,
+    "econReasoning": "This measure strengthens collective bargaining rights for state employees and mandates budget provisions for union-negotiated wages and benefits, which aligns with progressive labor policy and increased public sector compensation. The requirement for binding arbitration in labor disputes shifts power toward workers and away from management's unilateral decision-making.",
+    "socialReasoning": "This measure addresses labor relations and employment terms for state workers and contains no provisions related to social issues such as abortion, LGBTQ+ rights, criminal justice, voting, drugs, religion, or related cultural matters.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "md-2026-6",
@@ -1780,7 +2068,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 1428019,
-    "noVotes": 661346
+    "noVotes": 661346,
+    "econScore": 0.0,
+    "socialScore": 0.0,
+    "econReasoning": "This measure concerns administrative procedures for filling judicial vacancies and has no direct fiscal, tax, or economic policy dimension.",
+    "socialReasoning": "This measure addresses the structural mechanics of judicial administration rather than substantive social policy positions like rights, criminal justice outcomes, or social issues.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed as a technical administrative fix for filling Commission on Judicial Disabilities vacancies, but it structurally shifts appointment power between the Commission chair, governor, and existing members\u2014a material shift in institutional authority obscured by bureaucratic language."
   },
   {
     "id": "md-2026-7",
@@ -1797,7 +2091,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 1329997,
-    "noVotes": 818704
+    "noVotes": 818704,
+    "econScore": 0.0,
+    "socialScore": 0.65,
+    "econReasoning": "This measure concerns redistricting authority allocation between state and federal constitutional constraints, with no direct economic redistribution, taxation, or market regulation implications.",
+    "socialReasoning": "Republicans typically support relaxing redistricting constraints on congressional districts to preserve flexibility in electoral map-drawing, while Democrats generally favor stricter constitutional protections for fair representation and voting rights. This measure aligns with conservative positioning on electoral procedure.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed as a technical constitutional clarification but structurally shifts power by exempting congressional districts from state constitutional redistricting requirements, potentially enabling partisan gerrymandering that would otherwise be constrained."
   },
   {
     "id": "ma-2026-2",
@@ -2019,7 +2319,13 @@
     "type": "Voter Referendum",
     "status": "Qualified",
     "result": null,
-    "electionDate": "2028-11-07"
+    "electionDate": "2028-11-07",
+    "econScore": 0.0,
+    "socialScore": -0.95,
+    "econReasoning": "This measure has no significant economic dimension; it concerns abortion policy rather than taxation, regulation, or market mechanisms.",
+    "socialReasoning": "Repeal of restrictions on abortion after 24 weeks gestation strongly aligns with progressive/Democratic positions on abortion rights and reproductive autonomy, positioning it at the far left end of the social axis.",
+    "framingFlag": "rights_framing",
+    "framingNote": "The measure's framing as a 'repeal' of restrictions uses neutral procedural language, but the structural effect is an expansion of abortion access rights\u2014a progressive outcome that might be framed by opponents as permission for late-term abortion rather than as rights protection."
   },
   {
     "id": "mi-2026-2",
@@ -2036,7 +2342,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 1119008,
-    "noVotes": 3144066
+    "noVotes": 3144066,
+    "econScore": 0.0,
+    "socialScore": 0.0,
+    "econReasoning": "A constitutional convention question is a procedural mechanism for potentially revising state governance structures and does not inherently favor redistribution or market-driven approaches. The economic impact depends entirely on what convention delegates might propose, which is unknowable at the ballot stage.",
+    "socialReasoning": "Similarly, a convention call is procedurally neutral on social issues. While conventions could theoretically address social policy, this measure itself contains no substantive social policy content and does not favor either progressive or conservative social positions.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "mi-2026-3",
@@ -2053,7 +2365,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 3531044,
-    "noVotes": 812419
+    "noVotes": 812419,
+    "econScore": -0.72,
+    "socialScore": -0.65,
+    "econReasoning": "This measure imposes regulatory restrictions on corporate political spending and expands campaign finance disclosure requirements, reflecting left-aligned preferences for limiting corporate influence and increasing transparency in political funding. These are characteristic progressive regulatory and redistribution-oriented policies aimed at reducing wealthy interests' political power.",
+    "socialReasoning": "Campaign finance restrictions and expanded disclosure requirements are strongly associated with progressive and Democratic advocacy priorities, reflecting the left's focus on democratic participation, transparency, and limiting institutional corruption. Republicans typically oppose such restrictions as infringements on speech and corporate political participation rights.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed as campaign finance transparency reform, but structurally shifts power by restricting specific classes of entities (utilities, government contractors) from political participation while expanding regulatory scope over political communications beyond traditional express advocacy\u2014changes that materially alter the political playing field."
   },
   {
     "id": "mn-2026-2",
@@ -2070,7 +2388,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 2069087,
-    "noVotes": 666712
+    "noVotes": 666712,
+    "econScore": 0.35,
+    "socialScore": 0.0,
+    "econReasoning": "This measure adjusts investment and distribution policies for a state education endowment fund, reflecting a market-oriented approach to fund management that could increase returns and reduce reliance on annual appropriations. The changes align somewhat with conservative fiscal management principles, though the measure affects public education funding rather than advancing broad tax cuts or deregulation.",
+    "socialReasoning": "The measure addresses only administrative and fiscal policies for an education fund and contains no social policy dimensions related to abortion, voting rights, criminal justice, LGBTQ+ protections, gun rights, or other social issues.",
+    "framingFlag": "revenue_impact",
+    "framingNote": "The title's focus on 'alter investment and distribution policies' may obscure for voters the specific fiscal consequences\u2014whether the changes increase or decrease available funding for schools and over what timeframe."
   },
   {
     "id": "mo-2026-7",
@@ -2202,7 +2526,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 1253095,
-    "noVotes": 838200
+    "noVotes": 838200,
+    "econScore": 0.0,
+    "socialScore": 0.0,
+    "econReasoning": "This measure concerns procedural rules for citizen initiatives and legislative amendment processes, with no direct economic content regarding taxation, spending, redistribution, or market regulation.",
+    "socialReasoning": "The measure addresses the mechanics of ballot initiatives and legislative veto power over citizen-passed measures, containing no substantive social policy positions on abortion, LGBTQ+ rights, criminal justice, voting access, drugs, religion, or other social issues.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed as protecting 'citizen initiative' rights and democracy, but its structural effect is to increase the supermajority threshold (80%) required for legislative modification of citizen initiatives, which materially shifts power from the legislature toward voter-approved ballot measures and constrains future legislative authority."
   },
   {
     "id": "mo-2026-12",
@@ -2219,7 +2549,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 818054,
-    "noVotes": 1253729
+    "noVotes": 1253729,
+    "econScore": 0.72,
+    "socialScore": 0.0,
+    "econReasoning": "This measure proposes creating a permanent endowment to generate revenue that would replace state-imposed taxes, which is fundamentally a tax-reduction and market-driven approach to public finance. The mechanism of using investment earnings rather than direct taxation aligns with right-leaning fiscal philosophy emphasizing lower taxes and reduced government revenue extraction.",
+    "socialReasoning": "This measure contains no social policy dimensions; it addresses only fiscal and tax policy with no implications for social issues such as abortion, LGBTQ+ rights, criminal justice, voting rights, or other socially divisive topics.",
+    "framingFlag": "revenue_impact",
+    "framingNote": "The framing emphasizes 'eliminating state-imposed taxes' as a benefit, but obscures the structural requirement that investment earnings must be both generated and deemed 'sufficient' before taxes are actually eliminated, potentially creating uncertainty about whether promised tax relief materializes."
   },
   {
     "id": "mo-2026-13",
@@ -2236,7 +2572,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 1056289,
-    "noVotes": 1013747
+    "noVotes": 1013747,
+    "econScore": 0.0,
+    "socialScore": 0.35,
+    "econReasoning": "The measure has no direct economic dimension, as it concerns the electoral method for selecting county sheriffs rather than taxation, spending, or market regulation.",
+    "socialReasoning": "Requiring election of sheriffs aligns moderately with conservative governance preferences, as it emphasizes local democratic accountability and constrains appointive authority, which resonates with right-leaning emphasis on limiting centralized discretionary power. However, it is not primarily a social policy measure and does not engage core social conservative priorities.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed as a straightforward election requirement, but it structurally shifts power by converting sheriff selection from appointment to electoral accountability, which may be motivated by distrust of executive appointive authority\u2014a framing that obscures the underlying institutional power reallocation."
   },
   {
     "id": "mo-2026-14",
@@ -2253,7 +2595,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 788369,
-    "noVotes": 1275558
+    "noVotes": 1275558,
+    "econScore": 0.0,
+    "socialScore": 0.0,
+    "econReasoning": "Congressional redistricting is a procedural matter that does not inherently favor redistributive or market-driven economic policies; the economic impact depends on which districts are drawn, not the act of redistricting itself.",
+    "socialReasoning": "Redistricting is fundamentally a structural/procedural issue rather than a social policy issue; while gerrymandering can have political consequences, the measure itself does not directly address social issues like abortion, LGBTQ+ rights, criminal justice, or gun rights.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed as a simple affirmation of congressional districts, but redistricting structurally determines electoral power distribution and partisan advantage, making it a consequential shift in political representation that extends beyond routine procedural confirmation."
   },
   {
     "id": "mt-2026-1",
@@ -2270,7 +2618,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 328015,
-    "noVotes": 152820
+    "noVotes": 152820,
+    "econScore": 0.0,
+    "socialScore": 0.15,
+    "econReasoning": "This measure has no direct economic dimension\u2014it addresses the electoral structure of judicial selection rather than taxation, spending, or regulation of markets.",
+    "socialReasoning": "Nonpartisan judicial elections are generally supported across the political spectrum but align slightly with conservative preferences for depoliticizing institutions and reducing the influence of partisan interest groups that conservatives view as left-leaning. The measure is not primarily a social values issue, but institutional reform that leans modestly rightward.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "While framed neutrally as a process reform, removing party labels from judicial elections structurally reduces voter information and shifts power dynamics in judicial selection, though the magnitude of effect is modest and not materially obscured."
   },
   {
     "id": "mt-2026-2",
@@ -2287,7 +2641,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 308472,
-    "noVotes": 163127
+    "noVotes": 163127,
+    "econScore": 0.0,
+    "socialScore": -0.65,
+    "econReasoning": "This measure has no direct fiscal or taxation component; it is a procedural reform regarding democratic mechanisms rather than economic policy.",
+    "socialReasoning": "Initiative and referendum powers are progressive democratic tools that expand direct citizen participation and reduce barriers to popular legislation. Democrats and progressives generally favor strengthening these mechanisms, while Republicans tend to prefer representative/legislative checks on direct democracy. This aligns with left-of-center democratic theory.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed as adding a 'right' to the Declaration of Rights, but structurally shifts power from the state legislature to direct citizen ballot action, which could be perceived as either democratizing or destabilizing depending on political perspective."
   },
   {
     "id": "mt-2026-3",
@@ -2304,7 +2664,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 307039,
-    "noVotes": 161247
+    "noVotes": 161247,
+    "econScore": -0.75,
+    "socialScore": 0.0,
+    "econReasoning": "Restricting corporate and organizational campaign contributions is a core progressive economic position aimed at reducing the influence of concentrated wealth in politics and addressing campaign finance inequality. This aligns with left-leaning preferences for regulating financial flows in the political system.",
+    "socialReasoning": "Campaign finance restrictions do not directly implicate social issues such as abortion, gun rights, LGBTQ+ protections, criminal justice, or other cultural divides that define the social axis.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed as a straightforward campaign finance restriction, but it structurally reallocates political influence by removing a major funding channel for certain political actors, which has differential partisan effects even if neutrally worded."
   },
   {
     "id": "ne-2026-2",
@@ -2321,7 +2687,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 136921,
-    "noVotes": 598513
+    "noVotes": 598513,
+    "econScore": 0.0,
+    "socialScore": 0.0,
+    "econReasoning": "Term limit extension has no direct economic dimension\u2014it affects legislative tenure policy rather than taxation, spending, regulation, or market mechanisms.",
+    "socialReasoning": "Term limit policy has no inherent social dimension\u2014it does not address abortion, LGBTQ+ rights, gun rights, criminal justice, voting rights, drug policy, or other core social issues.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed as a simple term limit adjustment, but it structurally shifts power by allowing individual legislators to accumulate longer tenure and potentially greater institutional influence, which could affect legislative dynamics and incumbent entrenchment."
   },
   {
     "id": "ne-2026-3",
@@ -2338,7 +2710,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 340042,
-    "noVotes": 413433
+    "noVotes": 413433,
+    "econScore": 0.65,
+    "socialScore": 0.0,
+    "econReasoning": "Sports betting legalization is market-driven deregulation that expands private commercial activity and generates state tax revenue without redistributive mechanisms. This aligns with conservative preference for reducing regulatory barriers and expanding market-based economic activity.",
+    "socialReasoning": "Sports betting authorization has no direct connection to traditional social policy dimensions such as abortion, LGBTQ+ rights, criminal justice, voting access, or religious exemptions.",
+    "framingFlag": "revenue_impact",
+    "framingNote": "The measure frames sports betting as economic authorization, but the underlying structural effect is revenue generation for the state through licensing and taxation of a previously prohibited activity, which could obscure the fiscal impact and regulatory mechanisms from typical voters."
   },
   {
     "id": "ne-2026-4",
@@ -2355,7 +2733,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 343203,
-    "noVotes": 410215
+    "noVotes": 410215,
+    "econScore": 0.65,
+    "socialScore": 0.0,
+    "econReasoning": "Legalizing online sports betting represents a market-driven deregulation approach that expands private commercial activity and generates state revenue through licensing rather than taxation. This aligns with conservative economic preferences for market expansion and reduced government restrictions on commerce.",
+    "socialReasoning": "Sports betting legalization has no direct social policy dimension related to rights, identity, criminal justice, or cultural values that distinguish left from right on the social axis.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "ne-2026-5",
@@ -2372,7 +2756,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 504620,
-    "noVotes": 241149
+    "noVotes": 241149,
+    "econScore": 0.0,
+    "socialScore": 0.85,
+    "econReasoning": "This measure contains no significant economic dimension\u2014it does not involve taxation, public spending, regulation of markets, or redistribution of resources.",
+    "socialReasoning": "This measure restricts transgender athletes' participation in sports consistent with biological sex categories, which aligns with conservative social positions on traditional definitions of gender and sex-based regulations. Such restrictions are characteristic of right-wing social policy positions opposing gender identity protections.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "nv-2026-1",
@@ -2458,7 +2848,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 453903,
-    "noVotes": 197981
+    "noVotes": 197981,
+    "econScore": -0.65,
+    "socialScore": 0.0,
+    "econReasoning": "This measure funds public infrastructure through general obligation bonds backed by statewide property taxation, representing a progressive fiscal approach prioritizing public investment and redistribution. The proposal aligns with Democrat-favored mechanisms of public funding for social services, though the magnitude is moderate rather than transformative.",
+    "socialReasoning": "This bond issue addresses senior citizen facility improvement and contains no provisions related to social policy dimensions such as abortion, LGBTQ+ rights, criminal justice, voting rights, drugs, religion, or other cultural issues.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "nm-2026-9",
@@ -2475,7 +2871,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 427655,
-    "noVotes": 220414
+    "noVotes": 220414,
+    "econScore": -0.75,
+    "socialScore": 0.0,
+    "econReasoning": "This bond measure funds public education and libraries through general obligation bonds backed by statewide property taxation, representing a progressive approach to public investment in shared resources. Democrats typically support such public spending and taxation mechanisms for education, while Republicans tend to oppose property tax increases and favor market-based or private alternatives.",
+    "socialReasoning": "The measure addresses educational and library resource acquisition with no direct implications for social issues such as abortion, LGBTQ+ rights, gun rights, immigration, or criminal justice.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "nm-2026-10",
@@ -2492,7 +2894,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 416062,
-    "noVotes": 231046
+    "noVotes": 231046,
+    "econScore": -0.75,
+    "socialScore": 0.0,
+    "econReasoning": "This bond measure funds public higher education and special/tribal schools through general obligation bonds backed by property tax, reflecting a progressive approach to public investment in education. Democrats typically support expanded public education funding and progressive taxation mechanisms, while Republicans generally oppose property tax increases and prefer reduced public spending.",
+    "socialReasoning": "The measure has no direct social policy dimension\u2014it addresses capital infrastructure and institutional funding rather than abortion rights, gun policy, criminal justice, voting rights, or other social axis issues.",
+    "framingFlag": "revenue_impact",
+    "framingNote": "The measure frames educational benefit as the primary purpose while the structural mechanism\u2014a statewide property tax increase\u2014is secondary in the description, potentially obscuring the fiscal burden and distributional effects on taxpayers."
   },
   {
     "id": "nm-2026-11",
@@ -2509,7 +2917,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 497904,
-    "noVotes": 165277
+    "noVotes": 165277,
+    "econScore": 0.0,
+    "socialScore": 0.0,
+    "econReasoning": "This measure concerns procedural rules for bill enactment and does not directly address taxation, spending, regulation, or market mechanisms. It has no significant economic dimension.",
+    "socialReasoning": "This measure concerns the mechanics of legislative process and executive authority, not social issues such as abortion, gun rights, criminal justice, or civil rights. It has no significant social dimension.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed as eliminating an executive veto power, but structurally shifts authority by converting passive inaction into automatic law enactment, fundamentally altering the balance between executive and legislative branches."
   },
   {
     "id": "nm-2026-12",
@@ -2526,7 +2940,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 426862,
-    "noVotes": 231687
+    "noVotes": 231687,
+    "econScore": 0.0,
+    "socialScore": 0.35,
+    "econReasoning": "This measure concerns election administration and timing procedures with no direct fiscal impact, taxation policy, or redistribution effect.",
+    "socialReasoning": "Consolidating school elections with partisan elections could increase voter turnout and participation in school board races, which aligns somewhat with voting access expansion (left-leaning), but also may reduce the insulation of school governance from partisan politics, a goal associated with nonpartisan administration (centrist to right-leaning). The net effect slightly favors the conservative preference for streamlined administration and reduced separation of electoral processes.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure's neutral title on 'different times' obscures that consolidating elections structurally shifts power by increasing partisan political influence over school board selection and potentially altering the electoral dynamics that traditionally insulated education from party politics."
   },
   {
     "id": "nm-2026-13",
@@ -2543,7 +2963,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 445110,
-    "noVotes": 191138
+    "noVotes": 191138,
+    "econScore": 0.0,
+    "socialScore": 0.35,
+    "econReasoning": "This measure does not substantively address taxation, spending, redistribution, or market regulation. The governance changes to Board of Regents appointment procedures have no direct economic policy dimension.",
+    "socialReasoning": "The measure contains a party-switching restriction that leans conservative\u2014requiring non-student regents to maintain party affiliation for 12 months before appointment aligns with conservative skepticism of institutional drift and party-switching opportunism. However, the student appointment provision and nominating committee structure are procedural rather than ideologically weighted, limiting the social score magnitude.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed neutrally as governance restructuring, but the party-affiliation restriction and nominating committee structure substantively shift power dynamics in university board appointments, potentially affecting institutional political composition in ways not immediately apparent from the neutral procedural language."
   },
   {
     "id": "nm-2026-14",
@@ -2560,7 +2986,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 418548,
-    "noVotes": 240995
+    "noVotes": 240995,
+    "econScore": -0.65,
+    "socialScore": 0.0,
+    "econReasoning": "This measure increases state spending on legislator compensation to match median household income, a policy that expands public sector labor costs and is typically supported by progressive/Democratic constituencies favoring better government worker compensation. The measure does not involve taxation or redistribution mechanisms but represents increased public expenditure.",
+    "socialReasoning": "This measure addresses legislative compensation and has no direct implications for social policy issues such as abortion, LGBTQ+ rights, criminal justice, voting rights, drugs, religion, or other socially divisive dimensions.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "nc-2026-2",
@@ -2851,7 +3283,13 @@
     "type": "Advisory Constitutional Convention Question",
     "status": "Qualified",
     "result": null,
-    "electionDate": "2027-04-06"
+    "electionDate": "2027-04-06",
+    "econScore": 0.0,
+    "socialScore": 0.0,
+    "econReasoning": "A constitutional convention call is a procedural mechanism with no direct economic policy content. The economic impact would depend entirely on what a future convention might propose.",
+    "socialReasoning": "A constitutional convention call is a procedural mechanism with no direct social policy content. Any social policy effects would depend on the composition and decisions of a future convention.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "While framed neutrally as a convention call, this measure would structurally shift power by enabling wholesale revision of Oklahoma's constitutional framework, potentially affecting the balance between branches and institutions in ways not specified in the ballot language."
   },
   {
     "id": "or-2026-1",
@@ -2891,7 +3329,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 209110,
-    "noVotes": 139303
+    "noVotes": 139303,
+    "econScore": -0.7,
+    "socialScore": 0.0,
+    "econReasoning": "Bond-funded public higher education infrastructure represents a progressive fiscal approach emphasizing public investment and government-supported services. Democrats typically support such measures while Republicans tend to favor reduced public spending and private alternatives.",
+    "socialReasoning": "This measure has no significant social policy dimension\u2014it addresses fiscal allocation for education infrastructure rather than social issues like abortion, LGBTQ+ rights, criminal justice, or gun rights.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "ri-2026-7",
@@ -2908,7 +3352,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 213183,
-    "noVotes": 134355
+    "noVotes": 134355,
+    "econScore": -0.78,
+    "socialScore": 0.0,
+    "econReasoning": "Bond-funded public housing construction is a redistributive public program aligned with Democratic/progressive economic policy, involving direct government investment in affordable housing rather than market-driven or private solutions. This represents significant state intervention to address housing affordability, a hallmark left-wing economic position.",
+    "socialReasoning": "This measure has no meaningful social policy dimension; it addresses housing infrastructure rather than abortion, LGBTQ+ rights, criminal justice, voting, drugs, religion, or other socially divisive issues.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "ri-2026-8",
@@ -2925,7 +3375,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 162914,
-    "noVotes": 178645
+    "noVotes": 178645,
+    "econScore": -0.65,
+    "socialScore": 0.0,
+    "econReasoning": "Bond-funded infrastructure and economic development projects represent a left-leaning approach to stimulating economic growth through public investment rather than tax cuts or market-driven solutions. Democrats typically favor this form of government spending, while Republicans generally prefer private investment and reduced public expenditure.",
+    "socialReasoning": "This measure contains no social policy dimensions related to abortion, LGBTQ+ rights, criminal justice, voting rights, drugs, religion, or other socially divisive issues.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "ri-2026-9",
@@ -2942,7 +3398,13 @@
     "result": null,
     "electionDate": "2026-11-03",
     "yesVotes": 170378,
-    "noVotes": 174510
+    "noVotes": 174510,
+    "econScore": -0.65,
+    "socialScore": 0.0,
+    "econReasoning": "Bond issues for public cultural and historical projects align with Democratic/left-leaning positions favoring public investment and government support for arts and heritage. This represents public sector spending rather than tax cuts or market-driven approaches.",
+    "socialReasoning": "Cultural and historical funding has no inherent connection to social policy dimensions like abortion, LGBTQ+ rights, criminal justice, gun rights, or other culture war issues.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "ri-2026-10",
@@ -2959,7 +3421,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 232619,
-    "noVotes": 114027
+    "noVotes": 114027,
+    "econScore": -0.72,
+    "socialScore": 0.0,
+    "econReasoning": "Bond issuance for public environmental and water infrastructure projects represents government investment in collective goods funded through debt, a position typically favored by progressives. This aligns with Democratic support for public spending on environmental protection and infrastructure rather than market-based or private solutions.",
+    "socialReasoning": "This measure contains no social policy dimension\u2014it addresses fiscal allocation for environmental infrastructure and does not involve abortion, gun rights, criminal justice, voting rights, drug policy, religious exemptions, or other social axis issues.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "sd-2026-1",
@@ -3137,7 +3605,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 617693,
-    "noVotes": 395037
+    "noVotes": 395037,
+    "econScore": 0.0,
+    "socialScore": 0.0,
+    "econReasoning": "This measure concerns procedural requirements for constitutional amendments and has no direct economic dimension regarding taxation, spending, redistribution, or market regulation.",
+    "socialReasoning": "This measure establishes a publication and waiting period for constitutional amendments and does not address social issues such as abortion, LGBTQ+ rights, gun rights, criminal justice, or other values-based policy domains.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed as a transparency/publication requirement but structurally functions as a democratic process check that could meaningfully affect the speed and ease of constitutional amendment adoption, potentially shifting power dynamics between ballot-initiated and legislatively-referred amendments."
   },
   {
     "id": "ut-2026-4",
@@ -3154,7 +3628,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 393945,
-    "noVotes": 627987
+    "noVotes": 627987,
+    "econScore": 0.78,
+    "socialScore": 0.0,
+    "econReasoning": "This measure makes it harder to pass citizen-initiated tax increases by requiring a 60% supermajority instead of a simple majority, which aligns with right-leaning fiscal conservatism that opposes tax increases and constrains government revenue-raising authority. The supermajority requirement is a structural mechanism favored by conservatives to limit redistributive taxation and public spending.",
+    "socialReasoning": "This measure contains no social policy dimension\u2014it addresses only the procedural requirements for ballot measures on taxation and has no connection to abortion, LGBTQ+ rights, gun rights, criminal justice, voting access, drug policy, or other social issues.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed neutrally as a voting requirement, but it structurally shifts power by making it substantially harder for citizens to initiate tax-related ballot measures, effectively favoring the status quo and constraining direct democracy on fiscal policy\u2014a material shift in the citizen-legislature balance."
   },
   {
     "id": "vt-2026-1",
@@ -3309,7 +3789,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 1478123,
-    "noVotes": 1626774
+    "noVotes": 1626774,
+    "econScore": 0.0,
+    "socialScore": 0.85,
+    "econReasoning": "This measure does not contain significant fiscal or economic policy provisions. It focuses on procedural and notification requirements without imposing or removing taxation, spending, or regulatory burden on economic activity.",
+    "socialReasoning": "",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "wa-2026-5",
@@ -3326,7 +3812,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 1774564,
-    "noVotes": 1397005
+    "noVotes": 1397005,
+    "econScore": 0.0,
+    "socialScore": 0.85,
+    "econReasoning": "This measure does not address taxation, spending, regulation of markets, or redistribution of economic resources, so it has no meaningful economic dimension.",
+    "socialReasoning": "This measure restricts transgender and sex-diverse students' participation in athletics based on biological sex categories, which aligns with conservative social positions on traditional definitions of sex-based categories and opposition to transgender-inclusive policies. Such restrictions are predominantly supported by Republican-aligned voters and opposed by Democratic-aligned voters.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "wa-2026-6",
@@ -3343,7 +3835,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 1340827,
-    "noVotes": 1850642
+    "noVotes": 1850642,
+    "econScore": 0.85,
+    "socialScore": 0.0,
+    "econReasoning": "This measure calls for repealing a progressive tax on high earners and prohibiting future income taxes, which aligns strongly with conservative tax-cut and deregulation philosophy. The position favors market-driven outcomes over redistributive taxation.",
+    "socialReasoning": "This is a fiscal measure with no social policy dimension; it does not address abortion, gun rights, criminal justice, voting access, religious exemptions, or other socially-defining issues.",
+    "framingFlag": null,
+    "framingNote": null
   },
   {
     "id": "wv-2026-1",
@@ -3383,7 +3881,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 1308835,
-    "noVotes": 1270123
+    "noVotes": 1270123,
+    "econScore": 0.75,
+    "socialScore": 0.0,
+    "econReasoning": "This measure restricts executive power to increase taxes or fees through partial veto, aligning with conservative fiscal policy goals of limiting taxation and constraining government revenue-raising authority. The restriction on executive discretion to raise taxes reflects a right-leaning preference for lower taxation and reduced government spending capacity.",
+    "socialReasoning": "The measure addresses procedural constitutional authority and fiscal policy with no direct impact on social issues such as abortion, LGBTQ+ rights, criminal justice, voting rights, drug policy, or other cultural concerns.",
+    "framingFlag": "procedural_power_shift",
+    "framingNote": "The measure is framed as a straightforward fiscal limitation but structurally reallocates power between the executive and legislative branches by constraining the governor's veto authority, which is fundamentally a separation-of-powers issue obscured by tax-policy framing."
   },
   {
     "id": "wi-2026-5",
@@ -3400,7 +3904,13 @@
     "result": "Failed",
     "electionDate": "2026-11-03",
     "yesVotes": 1244742,
-    "noVotes": 1344295
+    "noVotes": 1344295,
+    "econScore": 0.0,
+    "socialScore": 0.75,
+    "econReasoning": "This measure does not substantively address taxation, spending, redistribution, or market regulation. It has no meaningful economic dimension.",
+    "socialReasoning": "This measure protects religious gatherings from government closure during emergencies, which aligns with conservative positions on religious exemptions and limits on government authority over religious practice. Republicans have predominantly backed such protections, particularly during COVID-19 lockdown disputes.",
+    "framingFlag": "rights_framing",
+    "framingNote": "The measure uses 'prohibit the government' language to frame a religious exemption from emergency powers, which substantively expands religious institutional rights during public health crises rather than protecting a pre-existing right\u2014a structurally significant distinction that may not be apparent to casual voters."
   },
   {
     "id": "wi-2026-6",
@@ -3417,7 +3927,13 @@
     "result": "Passed",
     "electionDate": "2026-11-03",
     "yesVotes": 1452551,
-    "noVotes": 1119646
+    "noVotes": 1119646,
+    "econScore": 0.0,
+    "socialScore": 0.75,
+    "econReasoning": "This measure addresses discrimination and preferential treatment in government, which has no direct implications for taxation, spending, or market regulation. It is economically neutral.",
+    "socialReasoning": "This amendment aligns with conservative positions opposing affirmative action and race-based/sex-based government classifications. While framed as colorblind equality, it represents the Republican-backed side of the affirmative action debate that dominated the 2000s-2020s political spectrum.",
+    "framingFlag": "rights_framing",
+    "framingNote": "The measure uses equality and anti-discrimination language to advance a restriction on race-conscious and sex-conscious government policies; supporters frame this as protecting 'equal rights' while opponents view it as restricting remedial diversity measures."
   },
   {
     "id": "wy-2026-2",
