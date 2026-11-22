@@ -44,8 +44,10 @@ interface BallotMeasure {
   type: string;
   status: string;
   electionDate: string;
-  result?: "Passed" | "Failed" | null;
+  result?: "Passed" | "Failed" | "Overturned" | null;
   removedAt?: string | null;
+  yesVotes?: number | null;
+  noVotes?: number | null;
   // Enrichment fields (added by enrich_ballot_measures.py)
   econScore?: number | null;
   socialScore?: number | null;
@@ -197,9 +199,71 @@ function FramingDisclosure({ measure }: { measure: BallotMeasure }) {
   );
 }
 
+function formatElectionDate(iso: string): string {
+  return new Date(iso + "T12:00:00").toLocaleDateString("en-US", {
+    month: "long", day: "numeric", year: "numeric",
+  });
+}
+
+function ResultBadge({ measure, past }: { measure: BallotMeasure; past: boolean }) {
+  const base = "text-[11px] font-bold px-2 py-0.5 rounded border";
+  if (measure.result === "Passed") {
+    return <span className={cn(base, "bg-emerald-500/10 border-emerald-500/30 text-emerald-500")}>✓ Passed</span>;
+  }
+  if (measure.result === "Failed") {
+    return <span className={cn(base, "bg-red-500/10 border-red-500/30 text-red-500")}>✗ Failed</span>;
+  }
+  if (measure.result === "Overturned") {
+    return (
+      <span
+        className={cn(base, "bg-amber-500/10 border-amber-500/30 text-amber-600")}
+        title="Approved by voters, then struck down"
+      >
+        Approved, then overturned
+      </span>
+    );
+  }
+  if (past) {
+    const counted = measure.yesVotes != null && measure.noVotes != null;
+    return (
+      <span className={cn(base, "bg-muted/40 border-border text-muted-foreground")}>
+        {counted ? "Too close to call" : "Pending results"}
+      </span>
+    );
+  }
+  return null;
+}
+
+function VoteBar({ measure }: { measure: BallotMeasure }) {
+  const yes = measure.yesVotes;
+  const no = measure.noVotes;
+  if (yes == null || no == null || yes + no === 0) return null;
+  const total = yes + no;
+  const yesPct = (yes / total) * 100;
+  const noPct = 100 - yesPct;
+  const fmt = (n: number) => n.toLocaleString("en-US");
+  const pct = (p: number) => `${p.toFixed(1)}%`;
+  return (
+    <div className="mb-3" aria-label={`Yes ${pct(yesPct)}, No ${pct(noPct)}`}>
+      <div className="flex justify-between text-[11px] mb-1">
+        <span className="font-semibold text-emerald-600">
+          Yes {pct(yesPct)} <span className="font-normal text-muted-foreground">· {fmt(yes)}</span>
+        </span>
+        <span className="font-semibold text-red-500">
+          <span className="font-normal text-muted-foreground">{fmt(no)} · </span>No {pct(noPct)}
+        </span>
+      </div>
+      <div className="flex h-1.5 rounded-full overflow-hidden bg-muted/40">
+        <div className="bg-emerald-500/70" style={{ width: `${yesPct}%` }} />
+        <div className="bg-red-500/60" style={{ width: `${noPct}%` }} />
+      </div>
+    </div>
+  );
+}
+
 export default function BallotPage() {
   const [selectedState, setSelectedState] = useState<string>("All");
-  const [activeTab, setActiveTab] = useState<"upcoming" | "results">("upcoming");
+  const [tabChoice, setTabChoice] = useState<"upcoming" | "results" | null>(null);
   const [quizResult, setQuizResult] = useState<QuizResult | null>(() => getQuizResult());
 
   // Re-read quiz result on window focus (user may have just taken quiz in another tab)
@@ -227,25 +291,46 @@ export default function BallotPage() {
   const isPast = (m: BallotMeasure) =>
     m.status !== "Removed" && m.electionDate < today;
 
-  const hasResults = measures
-    ? measures.some((m) => m.result === "Passed" || m.result === "Failed" || isPast(m))
-    : false;
+  const isDecided = (m: BallotMeasure) => !!m.result || isPast(m);
 
-  const upcoming = measures
-    ? measures.filter(
-        (m) => m.status !== "Removed" && !isPast(m) && !m.result &&
-        (selectedState === "All" || m.state === selectedState)
-      )
-    : [];
+  const allUpcoming = (measures ?? []).filter((m) => m.status !== "Removed" && !isDecided(m));
+  const allResults = (measures ?? []).filter((m) => m.status !== "Removed" && isDecided(m));
+  const hasResults = allResults.length > 0;
 
-  const results = measures
-    ? measures.filter(
-        (m) => (m.result === "Passed" || m.result === "Failed" || isPast(m)) &&
-        (selectedState === "All" || m.state === selectedState)
-      )
-    : [];
+  // Open on whichever tab has something to show, unless the user picked one
+  const activeTab: "upcoming" | "results" =
+    tabChoice ?? (allUpcoming.length === 0 && hasResults ? "results" : "upcoming");
+
+  const inState = (m: BallotMeasure) => selectedState === "All" || m.state === selectedState;
+
+  const upcoming = allUpcoming
+    .filter(inState)
+    .sort((a, b) => a.electionDate.localeCompare(b.electionDate) || a.state.localeCompare(b.state));
+
+  const results = allResults
+    .filter(inState)
+    .sort((a, b) => b.electionDate.localeCompare(a.electionDate) || a.state.localeCompare(b.state));
 
   const filtered = activeTab === "upcoming" ? upcoming : results;
+
+  // Group by election date, preserving sort order
+  const groups: { date: string; items: BallotMeasure[] }[] = [];
+  for (const m of filtered) {
+    const last = groups[groups.length - 1];
+    if (last && last.date === m.electionDate) last.items.push(m);
+    else groups.push({ date: m.electionDate, items: [m] });
+  }
+
+  const resultCounts = {
+    passed: results.filter((m) => m.result === "Passed").length,
+    failed: results.filter((m) => m.result === "Failed").length,
+    overturned: results.filter((m) => m.result === "Overturned").length,
+    pending: results.filter((m) => !m.result).length,
+  };
+
+  const latestResultDate = allResults.reduce((d, m) => (m.electionDate > d ? m.electionDate : d), "");
+  const years = Array.from(new Set((measures ?? []).filter((m) => m.status !== "Removed").map((m) => m.year))).sort();
+  const yearLabel = years.length > 1 ? `${years[0]}–${years[years.length - 1]}` : String(years[0] ?? "");
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
@@ -253,14 +338,15 @@ export default function BallotPage() {
       <div className="mb-8">
         <div className="inline-flex items-center gap-2 text-xs text-primary font-semibold tracking-widest uppercase mb-3 bg-primary/10 px-3 py-1.5 rounded-full">
           <ScrollText className="w-3.5 h-3.5" />
-          2026 Elections
+          {yearLabel ? `${yearLabel} Elections` : "Elections"}
         </div>
         <h1 className="text-3xl font-extrabold tracking-tight text-foreground mb-2">
           Ballot Measures
         </h1>
         <p className="text-muted-foreground leading-relaxed max-w-2xl">
-          Upcoming statewide ballot initiatives. Each measure is tagged with its ideological leaning —
-          and if you've taken the quiz, you'll see how it aligns with your own political profile.
+          Statewide ballot initiatives — what's coming up and how recent ones were decided. Each measure
+          is tagged with its ideological leaning, and if you've taken the quiz, you'll see how it aligns
+          with your own political profile.
         </p>
       </div>
 
@@ -285,7 +371,7 @@ export default function BallotPage() {
       {/* Tabs */}
       <div className="flex gap-1 mb-4 border-b border-border">
         <button
-          onClick={() => setActiveTab("upcoming")}
+          onClick={() => setTabChoice("upcoming")}
           className={cn(
             "px-4 py-2 text-sm font-medium border-b-2 -mb-px transition-colors",
             activeTab === "upcoming"
@@ -294,10 +380,11 @@ export default function BallotPage() {
           )}
         >
           Upcoming
+          {!isLoading && <span className="ml-1.5 text-xs text-muted-foreground">{allUpcoming.length}</span>}
         </button>
         {hasResults && (
           <button
-            onClick={() => setActiveTab("results")}
+            onClick={() => setTabChoice("results")}
             className={cn(
               "px-4 py-2 text-sm font-medium border-b-2 -mb-px transition-colors",
               activeTab === "results"
@@ -306,9 +393,36 @@ export default function BallotPage() {
             )}
           >
             Results
+            <span className="ml-1.5 text-xs text-muted-foreground">{allResults.length}</span>
           </button>
         )}
       </div>
+
+      {/* Pointer to recent results from the Upcoming tab */}
+      {activeTab === "upcoming" && latestResultDate && (
+        <button
+          onClick={() => setTabChoice("results")}
+          className="w-full text-left text-sm bg-muted/30 border border-border rounded-lg px-4 py-2.5 mb-4 hover:border-primary/40 transition-colors"
+        >
+          <span className="text-foreground font-medium">Results are in</span>
+          <span className="text-muted-foreground"> for the {formatElectionDate(latestResultDate)} election — </span>
+          <span className="text-primary font-medium">see how each measure was decided →</span>
+        </button>
+      )}
+
+      {/* Results summary */}
+      {activeTab === "results" && results.length > 0 && (
+        <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm mb-4">
+          <span className="text-emerald-600 font-semibold">{resultCounts.passed} passed</span>
+          <span className="text-red-500 font-semibold">{resultCounts.failed} failed</span>
+          {resultCounts.overturned > 0 && (
+            <span className="text-amber-600 font-semibold">{resultCounts.overturned} overturned</span>
+          )}
+          {resultCounts.pending > 0 && (
+            <span className="text-muted-foreground">{resultCounts.pending} still being counted</span>
+          )}
+        </div>
+      )}
 
       {/* State filter */}
       <div className="flex items-center gap-3 mb-6">
@@ -346,13 +460,21 @@ export default function BallotPage() {
             : `No results found${selectedState !== "All" ? ` for ${selectedState}` : ""}.`}
         </div>
       ) : (
-        <div className="space-y-3">
-          {filtered.map((measure) => {
+        <div className="space-y-10">
+          {groups.map((group) => (
+          <section key={group.date}>
+          <h2 className="flex items-baseline gap-2 text-sm font-semibold text-foreground mb-3">
+            {formatElectionDate(group.date)}
+            <span className="text-xs font-normal text-muted-foreground">
+              {group.items.length} measure{group.items.length !== 1 ? "s" : ""}
+            </span>
+          </h2>
+          <div className="space-y-3">
+          {group.items.map((measure) => {
             const lean = getLeanLabel(measure);
             const alignment = getAlignment(measure, quizResult);
-            const electionDateStr = new Date(measure.electionDate + "T12:00:00").toLocaleDateString("en-US", {
-              month: "long", day: "numeric", year: "numeric",
-            });
+            const electionDateStr = formatElectionDate(measure.electionDate);
+            const decided = isDecided(measure);
 
             return (
               <div
@@ -367,21 +489,10 @@ export default function BallotPage() {
                         {measure.stateCode}
                       </span>
                       <span className="text-[11px] text-muted-foreground">{measure.type}</span>
-                      <span className="text-[11px] text-muted-foreground">· {measure.status}</span>
-                      {measure.result ? (
-                        <span className={cn(
-                          "text-[11px] font-bold px-2 py-0.5 rounded border",
-                          measure.result === "Passed"
-                            ? "bg-emerald-500/10 border-emerald-500/30 text-emerald-400"
-                            : "bg-red-500/10 border-red-500/30 text-red-400"
-                        )}>
-                          {measure.result === "Passed" ? "✓ Passed" : "✗ Failed"}
-                        </span>
-                      ) : isPast(measure) ? (
-                        <span className="text-[11px] font-bold px-2 py-0.5 rounded border bg-muted/40 border-border text-muted-foreground">
-                          Pending Results
-                        </span>
-                      ) : null}
+                      {!decided && (
+                        <span className="text-[11px] text-muted-foreground">· {measure.status}</span>
+                      )}
+                      <ResultBadge measure={measure} past={isPast(measure)} />
                     </div>
                     <h3 className="text-sm font-bold text-foreground leading-snug">{measure.title}</h3>
                   </div>
@@ -406,6 +517,9 @@ export default function BallotPage() {
 
                 {/* Summary */}
                 <p className="text-sm text-muted-foreground leading-relaxed mb-3">{measure.summary}</p>
+
+                {/* How it was decided */}
+                {decided && <VoteBar measure={measure} />}
 
                 {/* Framing / mechanical effect disclosure */}
                 <FramingDisclosure measure={measure} />
@@ -433,19 +547,29 @@ export default function BallotPage() {
               </div>
             );
           })}
+          </div>
+          </section>
+          ))}
         </div>
       )}
 
       <p className="text-xs text-muted-foreground mt-8 text-center">
-        Data sourced from{" "}
-        <a
-          href="https://ballotpedia.org/2026_ballot_measures"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline underline-offset-2 hover:text-foreground"
-        >
-          Ballotpedia
-        </a>
+        Data sourced from Ballotpedia
+        {years.length > 0 && " ("}
+        {years.map((y, i) => (
+          <span key={y}>
+            {i > 0 && ", "}
+            <a
+              href={`https://ballotpedia.org/${y}_ballot_measures`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-foreground"
+            >
+              {y}
+            </a>
+          </span>
+        ))}
+        {years.length > 0 && ")"}
         . Ideological leans are editorial assessments based on policy category and measure direction.
       </p>
     </div>

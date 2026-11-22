@@ -19,8 +19,17 @@ from html.parser import HTMLParser
 
 REPO_ROOT   = Path(__file__).parent.parent
 OUTPUT_FILE = REPO_ROOT / "data" / "ballot-measures.json"
-URL         = "https://ballotpedia.org/2026_ballot_measures"
-YEAR        = 2026
+YEAR        = 2026  # default year for helpers; scrape_measures() takes an explicit year
+URL_TEMPLATE = "https://ballotpedia.org/{year}_ballot_measures"
+URL         = URL_TEMPLATE.format(year=YEAR)
+
+
+def years_to_scrape(today: datetime.date | None = None) -> list[int]:
+    """The most recent even (general-election) year plus the next two years,
+    so finished results stay visible while upcoming measures are tracked."""
+    y = (today or datetime.date.today()).year
+    start = y if y % 2 == 0 else y - 1
+    return [start, start + 1, start + 2]
 
 # Map Ballotpedia "Subject" text → our category keys
 # Subjects are semicolon-separated strings like "Criminal justice; Drug policy"
@@ -292,12 +301,37 @@ def parse_date(month_day: str, year: int = YEAR) -> str:
 
 
 def expand_type(abbr: str) -> str:
-    return TYPE_MAP.get(abbr.strip(), abbr.strip())
+    abbr = abbr.strip()
+    if abbr in TYPE_MAP:
+        return TYPE_MAP[abbr]
+    # Combined types like "CICA/SS" → "Citizen-Initiated Constitutional Amendment / State Statute"
+    parts = [p.strip() for p in re.split(r"[/\n]", abbr) if p.strip()]
+    if len(parts) > 1 and parts[0] in TYPE_MAP:
+        rest = {"SS": "State Statute", "CA": "Constitutional Amendment"}
+        return " / ".join([TYPE_MAP[parts[0]]] + [rest.get(p, TYPE_MAP.get(p, p)) for p in parts[1:]])
+    return abbr
+
+
+def _parse_votes(raw: str) -> int | None:
+    """Parse a vote cell like '1,448,697 (56%)' → 1448697."""
+    m = re.match(r"\s*([\d,]+)", raw or "")
+    if not m:
+        return None
+    digits = m.group(1).replace(",", "")
+    return int(digits) if digits else None
+
+
+def _is_type_abbr(text: str, abbrs: set) -> bool:
+    """True for a type abbreviation, including combined ones like 'CICA/SS'."""
+    parts = [p.strip() for p in re.split(r"[/\n]", text) if p.strip()]
+    return bool(parts) and all(p in abbrs for p in parts)
 
 
 def _parse_result(raw: str) -> str | None:
-    """Parse Ballotpedia result column. Returns 'Passed', 'Failed', or None."""
+    """Parse Ballotpedia result column. Returns 'Passed', 'Failed', 'Overturned', or None."""
     words = set(re.findall(r"[a-z]+", raw.lower()))
+    if "overturned" in words:
+        return "Overturned"  # approved by voters, later struck down
     if words & {"passed", "approved", "yes", "enacted"}:
         return "Passed"
     if words & {"failed", "rejected", "defeated", "no"}:
@@ -377,10 +411,11 @@ def parse_table_rows(table_html: str) -> list[list[str]] | None:
     return rows
 
 
-def scrape_measures() -> list:
-    """Scrape the main Ballotpedia 2026 ballot measures page using regex."""
-    print(f"Fetching {URL} ...")
-    html = fetch_html(URL)
+def scrape_measures(year: int = YEAR) -> list:
+    """Scrape Ballotpedia's statewide ballot measures page for one year."""
+    url = URL_TEMPLATE.format(year=year)
+    print(f"Fetching {url} ...")
+    html = fetch_html(url)
 
     measures = []
     state_counts: dict[str, int] = {}
@@ -422,7 +457,7 @@ def scrape_measures() -> list:
         section = html[pos:end]
 
         # Find election date(s): <b>Month Day</b> in a <p> tag
-        current_date = f"{YEAR}-11-03"
+        current_date = f"{year}-11-03"
 
         # Find all bptable tables in this section
         # Track current date as we go through bold text and tables in order
@@ -447,7 +482,7 @@ def scrape_measures() -> list:
         for tpos, table_html in tables_found:
             # Advance date to the last marker before this table
             while date_idx < len(date_markers) and date_markers[date_idx][0] < tpos:
-                current_date = parse_date(date_markers[date_idx][1])
+                current_date = parse_date(date_markers[date_idx][1], year)
                 date_idx += 1
 
             rows = parse_table_rows(table_html)
@@ -463,21 +498,21 @@ def scrape_measures() -> list:
                 }
                 col0 = cols[0].strip()
 
-                if col0 in TYPE_ABBRS:
+                if _is_type_abbr(col0, TYPE_ABBRS):
                     mtype_raw  = col0
                     title      = cols[1] if len(cols) > 1 else ""
-                    subject    = cols[2] if len(cols) > 2 else ""
-                    desc       = cols[3] if len(cols) > 3 else ""
-                    result_raw = cols[4] if len(cols) > 4 else ""
                 else:
                     title      = col0
                     mtype_raw  = cols[1] if len(cols) > 1 else ""
-                    subject    = cols[2] if len(cols) > 2 else ""
-                    desc       = cols[3] if len(cols) > 3 else ""
-                    result_raw = cols[4] if len(cols) > 4 else ""
+                # Columns: Type, Title, Subject, Description, Result, Yes Votes, No Votes
+                subject    = cols[2] if len(cols) > 2 else ""
+                desc       = cols[3] if len(cols) > 3 else ""
+                result_raw = cols[4] if len(cols) > 4 else ""
+                yes_votes  = _parse_votes(cols[5]) if len(cols) > 5 else None
+                no_votes   = _parse_votes(cols[6]) if len(cols) > 6 else None
 
                 title = title.strip()
-                if not title or title in TYPE_ABBRS:
+                if not title or _is_type_abbr(title, TYPE_ABBRS):
                     continue
 
                 # Skip non-statewide (county/local) measures
@@ -495,13 +530,13 @@ def scrape_measures() -> list:
 
                 n = state_counts.get(state, 0) + 1
                 state_counts[state] = n
-                mid = f"{code.lower()}-{YEAR}-{n}"
+                mid = f"{code.lower()}-{year}-{n}"
 
-                measures.append({
+                measure = {
                     "id":                    mid,
                     "state":                 state,
                     "stateCode":             code,
-                    "year":                  YEAR,
+                    "year":                  year,
                     "title":                 title,
                     "summary":               summary,
                     "category":              category,
@@ -511,7 +546,11 @@ def scrape_measures() -> list:
                     "status":                result if result else "Qualified",
                     "result":                result,
                     "electionDate":          current_date,
-                })
+                }
+                if yes_votes is not None and no_votes is not None:
+                    measure["yesVotes"] = yes_votes
+                    measure["noVotes"]  = no_votes
+                measures.append(measure)
 
     return measures
 
@@ -693,11 +732,26 @@ class BallotpediaParser(HTMLParser):
 
 
 def main():
-    measures = scrape_measures()
-    print(f"Scraped {len(measures)} statewide measures")
+    years = years_to_scrape()
+    measures = []
+    scraped_years: set[int] = set()
+    for i, year in enumerate(years):
+        try:
+            found = scrape_measures(year)
+        except Exception as e:
+            # A missing future-year page shouldn't sink the whole refresh;
+            # the primary (first) year is required.
+            if i == 0:
+                raise
+            print(f"WARNING: could not scrape {year}: {e}", file=sys.stderr)
+            continue
+        print(f"Scraped {len(found)} statewide measures for {year}")
+        if found:
+            scraped_years.add(year)
+            measures.extend(found)
 
-    if not measures:
-        print("ERROR: No measures scraped — check page structure", file=sys.stderr)
+    if years[0] not in scraped_years:
+        print(f"ERROR: No measures scraped for {years[0]} — check page structure", file=sys.stderr)
         sys.exit(1)
 
     existing = _load_existing()
@@ -748,7 +802,9 @@ def main():
     for key, prev in existing.items():
         if key in scraped_keys:
             continue
-        if prev.get("status") not in ("Removed", "Passed", "Failed"):
+        # Only mark as removed if we actually scraped that measure's year
+        prev_year = prev.get("year") or int(str(prev.get("electionDate", "0"))[:4] or 0)
+        if prev_year in scraped_years and prev.get("status") not in ("Removed", "Passed", "Failed", "Overturned"):
             prev["status"] = "Removed"
             prev["removedAt"] = today
             removed_count += 1

@@ -13,6 +13,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-05-19",
+    "yesVotes": 691002,
+    "noVotes": 155985,
     "econScore": 0.0,
     "socialScore": 0.75,
     "econReasoning": "This measure has no direct economic dimension\u2014it does not involve taxation, spending, regulation of markets, or redistribution of resources.",
@@ -34,6 +36,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-05-19",
+    "yesVotes": 474839,
+    "noVotes": 347379,
     "econScore": 0.55,
     "socialScore": 0.0,
     "econReasoning": "This measure protects public employee compensation from reduction, which aligns with conservative fiscal priorities by limiting government spending flexibility and constraining the ability to adjust budgets downward. However, it is not a tax cut or deregulation, so it does not score at the extreme right.",
@@ -54,7 +58,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 987299,
+    "noVotes": 522130
   },
   {
     "id": "al-2026-8",
@@ -69,7 +75,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 759506,
+    "noVotes": 732160
   },
   {
     "id": "al-2026-9",
@@ -84,7 +92,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 974645,
+    "noVotes": 582918
   },
   {
     "id": "al-2026-10",
@@ -99,7 +109,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 909259,
+    "noVotes": 642958
   },
   {
     "id": "ak-2026-6",
@@ -115,6 +127,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-08-18",
+    "yesVotes": 117962,
+    "noVotes": 45418,
     "econScore": -0.65,
     "socialScore": 0.0,
     "econReasoning": "Campaign contribution limits are a regulatory constraint on financial activity intended to reduce the influence of money in politics, aligning with progressive preferences for campaign finance reform. This measure restricts private spending in political campaigns, reflecting left-leaning Democratic priorities rather than market-oriented Republican approaches.",
@@ -136,6 +150,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 126919,
+    "noVotes": 147831,
     "econScore": 0.0,
     "socialScore": 0.65,
     "econReasoning": "This measure has no direct fiscal or tax implications; it concerns electoral procedure rather than taxation, spending, or market regulation.",
@@ -157,6 +173,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 187871,
+    "noVotes": 87429,
     "econScore": 0.0,
     "socialScore": 0.85,
     "econReasoning": "This measure has no direct economic dimension; it addresses voting eligibility criteria rather than taxation, spending, regulation, or market policy.",
@@ -178,6 +196,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1245550,
+    "noVotes": 1197059,
     "econScore": 0.75,
     "socialScore": 0.0,
     "econReasoning": "This measure opposes a potential tax mechanism (vehicle miles traveled tax) and restricts government revenue-raising authority, aligning with conservative tax-limitation and anti-regulation positions. It reflects right-leaning skepticism of new taxes and expansive government fiscal powers.",
@@ -199,6 +219,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 983216,
+    "noVotes": 1470755,
     "econScore": 0.0,
     "socialScore": 0.75,
     "econReasoning": "This measure addresses constitutional rights and government authority rather than taxation, spending, regulation, or market structure. It has no direct economic policy dimension.",
@@ -220,6 +242,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1162297,
+    "noVotes": 1327018,
     "econScore": 0.0,
     "socialScore": 0.85,
     "econReasoning": "This measure contains no significant provisions affecting taxation, spending, regulation of markets, or redistribution of economic resources.",
@@ -241,6 +265,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1533417,
+    "noVotes": 936582,
     "econScore": 0.72,
     "socialScore": 0.0,
     "econReasoning": "This measure restricts local government's taxing authority and caps tax rates, reflecting conservative anti-tax and anti-regulation principles favored by the political right. It prioritizes limiting government revenue collection over funding public programs.",
@@ -262,6 +288,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1404174,
+    "noVotes": 1073964,
     "econScore": 0.0,
     "socialScore": 0.8,
     "econReasoning": "Designating drug cartels as terrorist organizations has no direct economic policy dimension regarding taxation, spending, regulation of markets, or wealth distribution.",
@@ -283,6 +311,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1459944,
+    "noVotes": 1025836,
     "econScore": 0.0,
     "socialScore": 0.85,
     "econReasoning": "This measure has no significant economic dimension; it does not address taxation, redistribution, regulation of markets, or public spending.",
@@ -304,6 +334,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1543597,
+    "noVotes": 928371,
     "econScore": 0.0,
     "socialScore": 0.65,
     "econReasoning": "This measure has no significant economic dimension\u2014it neither redistributes resources, adjusts taxation, nor substantially affects market regulation or public spending.",
@@ -325,6 +357,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1169808,
+    "noVotes": 1262089,
     "econScore": 0.65,
     "socialScore": 0.0,
     "econReasoning": "This measure mandates budget allocation rules that reflect conservative priorities around fiscal efficiency and constraint on public spending, reducing administrative overhead and emphasizing direct service delivery rather than expansive bureaucracy.",
@@ -345,7 +379,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 597481,
+    "noVotes": 267343
   },
   {
     "id": "ar-2026-6",
@@ -360,7 +396,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 614054,
+    "noVotes": 253197
   },
   {
     "id": "ar-2026-7",
@@ -375,7 +413,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 419504,
+    "noVotes": 431330
   },
   {
     "id": "ar-2026-8",
@@ -390,7 +430,9 @@
     "type": "Legislatively Referred State Statute",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 476111,
+    "noVotes": 368136
   },
   {
     "id": "ca-2026-6",
@@ -406,6 +448,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 7835924,
+    "noVotes": 4983548,
     "econScore": -0.75,
     "socialScore": 0.0,
     "econReasoning": "This bond measure funds public housing programs and veteran home loans through government debt issuance, representing a left-aligned approach to addressing housing through public investment rather than market mechanisms. The measure expands public sector involvement in housing provision, which aligns with progressive fiscal priorities.",
@@ -427,6 +471,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 7845416,
+    "noVotes": 4962539,
     "econScore": 0.35,
     "socialScore": 0.0,
     "econReasoning": "This measure allows California to accumulate larger budget reserves by increasing the BSA cap and exempting BSA deposits from spending limits, which aligns with fiscal conservatism and constrains government spending flexibility. However, it is a procedural fiscal mechanism rather than a direct tax cut or deregulation, placing it in moderate right territory rather than strongly conservative.",
@@ -448,6 +494,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 7857406,
+    "noVotes": 5068647,
     "econScore": -0.85,
     "socialScore": 0.0,
     "econReasoning": "This measure renews progressive income taxes specifically dedicated to public education and early childhood programs, representing a left-aligned position on taxation and public spending. The measure funds redistributive social programs through progressive taxation rather than market mechanisms.",
@@ -469,6 +517,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 7967490,
+    "noVotes": 4803705,
     "econScore": -0.68,
     "socialScore": 0.0,
     "econReasoning": "This measure uses $25 billion in public bonds to fund a government homebuyer assistance program, reflecting progressive redistribution and public intervention in housing markets rather than market-driven solutions. Democrats typically support such direct government programs to address housing affordability, while Republicans generally favor private market mechanisms and lower public spending.",
@@ -490,6 +540,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 6887248,
+    "noVotes": 5891023,
     "econScore": -0.72,
     "socialScore": 0.0,
     "econReasoning": "This measure represents a significant public investment funded through general obligation bonds (debt-financed government spending), which aligns with left-leaning economic policy favoring public programs and active government intervention in prioritized sectors. The funding mechanism and scale reflect progressive fiscal approaches to addressing societal needs through public expenditure rather than market mechanisms.",
@@ -511,6 +563,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 5133959,
+    "noVotes": 7869219,
     "econScore": 0.0,
     "socialScore": 0.85,
     "econReasoning": "This measure has no significant economic dimension. It addresses election administration procedures rather than taxation, spending, or market regulation.",
@@ -529,9 +583,11 @@
     "partisan": true,
     "conservativeDirection": true,
     "type": "Legislatively Referred State Statute",
-    "status": "Qualified",
-    "result": null,
+    "status": "Failed",
+    "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 6323313,
+    "noVotes": 6370063,
     "econScore": -0.65,
     "socialScore": 0.0,
     "econReasoning": "Public financing of campaigns requires government expenditure and represents a progressive approach to reducing the influence of private money in politics. This aligns with left-leaning preferences for public programs and redistribution mechanisms, though the measure preserves candidate choice rather than mandating participation.",
@@ -544,15 +600,17 @@
     "state": "California",
     "stateCode": "CA",
     "year": 2026,
-    "title": "CICA/SS",
+    "title": "Proposition 40",
     "summary": "Levy a one-time 5% tax on the accumulated wealth of taxpayers and trusts with covered assets valued over $1 billion to fund state health care programs, food assistance programs, and public education",
     "category": "fiscal_tax",
     "partisan": true,
     "conservativeDirection": false,
-    "type": "Proposition 40",
+    "type": "Citizen-Initiated Constitutional Amendment / State Statute",
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 6232026,
+    "noVotes": 6790150,
     "econScore": -0.85,
     "socialScore": 0.0,
     "econReasoning": "This measure implements progressive wealth taxation to fund public programs (healthcare, food assistance, education), which aligns strongly with left/Democratic economic philosophy favoring redistribution and public investment. The one-time 5% tax on accumulated wealth above $1 billion targets high-net-worth individuals and trusts, a characteristic progressive tax structure.",
@@ -574,6 +632,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 5725607,
+    "noVotes": 7056902,
     "econScore": 0.72,
     "socialScore": 0.0,
     "econReasoning": "This measure mandates efficiency requirements and performance-based budget reallocation for new tax revenues, reflecting conservative fiscal philosophy emphasizing government accountability, elimination of waste, and market-like performance metrics. It constrains the expansion of government spending by requiring offsetting program cuts, which aligns with right-leaning fiscal principles.",
@@ -595,6 +655,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 6610004,
+    "noVotes": 6297440,
     "econScore": 0.85,
     "socialScore": 0.0,
     "econReasoning": "This measure prohibits new taxes on retirement savings and personal assets, which aligns with right-leaning tax policy priorities of reducing taxation on capital and personal wealth accumulation. The proposal directly opposes wealth redistribution and progressive taxation mechanisms that would target accumulated personal assets.",
@@ -616,6 +678,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 5374482,
+    "noVotes": 7320329,
     "econScore": 0.78,
     "socialScore": 0.0,
     "econReasoning": "This measure imposes supermajority voting requirements for local tax increases and restricts property tax authority, reflecting conservative fiscal preferences for tax restraint and limiting government revenue-raising power. It aligns with Republican and right-libertarian positions on limiting taxation and public spending.",
@@ -637,6 +701,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 2486629,
+    "noVotes": 10394707,
     "econScore": -0.65,
     "socialScore": 0.0,
     "econReasoning": "This measure mandates operational efficiency standards (90% revenue on mission) for nonprofit healthcare providers, reflecting progressive regulatory intervention in healthcare delivery. The requirement constrains administrative spending and overhead, aligning with left-leaning oversight of healthcare organizations and accountability frameworks.",
@@ -658,6 +724,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 5499092,
+    "noVotes": 7132908,
     "econScore": -0.35,
     "socialScore": 0.0,
     "econReasoning": "The measure increases regulatory requirements and procedural timelines for state and local agencies, which imposes compliance costs and administrative burden. However, it applies to essential public services (housing, water, transportation, energy, health/safety) that Democrats typically support funding, and does not explicitly redistribute resources or raise taxes.",
@@ -679,12 +747,59 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 6451502,
+    "noVotes": 5978789,
     "econScore": 0.0,
     "socialScore": 0.35,
     "econReasoning": "This measure has no direct economic dimension\u2014it concerns the procedural mechanics of filling a vacant state office rather than taxation, spending, or market regulation.",
     "socialReasoning": "The measure aligns moderately with conservative institutional preferences by reducing the democratic mechanism of successor elections and concentrating appointment power in the executive or legislature, reflecting a conservative skepticism of direct democratic processes and preference for institutional hierarchy.",
     "framingFlag": "procedural_power_shift",
     "framingNote": "The measure is framed as a neutral procedural change to 'eliminate the successor election,' but it structurally concentrates power by removing voters' direct say in filling a recalled office and shifting that decision to appointive mechanisms controlled by other branches."
+  },
+  {
+    "id": "ca-2028-3",
+    "state": "California",
+    "stateCode": "CA",
+    "year": 2028,
+    "title": "Science and Health Research Bond Measure",
+    "summary": "Issue $7.5 billion in bonds to fund grants, make loans, and enter contracts with public and private research entities for scientific and health research and development",
+    "category": "fiscal_tax",
+    "partisan": false,
+    "conservativeDirection": true,
+    "type": "Bond Issue",
+    "status": "Qualified",
+    "result": null,
+    "electionDate": "2028-03-07"
+  },
+  {
+    "id": "ca-2028-1",
+    "state": "California",
+    "stateCode": "CA",
+    "year": 2028,
+    "title": "Limit Public Education Affirmative Action Ban to Higher Education Admissions and Enrollment Amendment",
+    "summary": "Remove higher education admissions and enrollment from the list of state operations that are expressly prohibited from engaging in racial discrimination or granting race-based preferential treatment",
+    "category": "fiscal_tax",
+    "partisan": true,
+    "conservativeDirection": true,
+    "type": "Legislatively Referred Constitutional Amendment",
+    "status": "Qualified",
+    "result": null,
+    "electionDate": "2028-11-07"
+  },
+  {
+    "id": "ca-2028-2",
+    "state": "California",
+    "stateCode": "CA",
+    "year": 2028,
+    "title": "University of California Staff First-Time Homebuyer Down Payment Loan Program Initiative",
+    "summary": "Create a first time homebuyer downpayment loan program for qualifying staff of state universities",
+    "category": "fiscal_tax",
+    "partisan": true,
+    "conservativeDirection": true,
+    "type": "Citizen-Initiated Constitutional Amendment",
+    "status": "Qualified",
+    "result": null,
+    "electionDate": "2028-11-07"
   },
   {
     "id": "co-2026-9",
@@ -699,7 +814,9 @@
     "type": "Citizen-Initiated Constitutional Amendment",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1189572,
+    "noVotes": 1473720
   },
   {
     "id": "co-2026-10",
@@ -714,7 +831,9 @@
     "type": "Citizen-Initiated Constitutional Amendment",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1219828,
+    "noVotes": 1416531
   },
   {
     "id": "co-2026-11",
@@ -729,7 +848,9 @@
     "type": "Citizen-Initiated Constitutional Amendment",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1191671,
+    "noVotes": 1448259
   },
   {
     "id": "co-2026-12",
@@ -744,7 +865,9 @@
     "type": "Citizen-Initiated Constitutional Amendment",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 976240,
+    "noVotes": 1689981
   },
   {
     "id": "co-2026-13",
@@ -759,7 +882,9 @@
     "type": "Citizen-Initiated Constitutional Amendment",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1353205,
+    "noVotes": 1292407
   },
   {
     "id": "co-2026-14",
@@ -774,22 +899,26 @@
     "type": "Citizen-Initiated Constitutional Amendment",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1214969,
+    "noVotes": 1376879
   },
   {
     "id": "co-2026-15",
     "state": "Colorado",
     "stateCode": "CO",
     "year": 2026,
-    "title": "CICA/SS",
+    "title": "Amendment 87",
     "summary": "Establish a graduated income tax within the state",
     "category": "fiscal_tax",
     "partisan": true,
     "conservativeDirection": true,
-    "type": "Amendment 87",
+    "type": "Citizen-Initiated Constitutional Amendment / State Statute",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1372797,
+    "noVotes": 1281499
   },
   {
     "id": "co-2026-16",
@@ -804,7 +933,9 @@
     "type": "Citizen-Initiated State Statute",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1391310,
+    "noVotes": 1251813
   },
   {
     "id": "co-2026-17",
@@ -819,7 +950,9 @@
     "type": "Citizen-Initiated State Statute",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1641772,
+    "noVotes": 1000693
   },
   {
     "id": "co-2026-18",
@@ -834,7 +967,9 @@
     "type": "Citizen-Initiated State Statute",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1379283,
+    "noVotes": 1265159
   },
   {
     "id": "co-2026-19",
@@ -849,7 +984,9 @@
     "type": "Citizen-Initiated State Statute",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1373942,
+    "noVotes": 1273599
   },
   {
     "id": "co-2026-20",
@@ -864,7 +1001,9 @@
     "type": "Citizen-Initiated State Statute",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1230911,
+    "noVotes": 1379194
   },
   {
     "id": "co-2026-21",
@@ -879,7 +1018,9 @@
     "type": "Citizen-Initiated State Statute",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1366062,
+    "noVotes": 1261003
   },
   {
     "id": "co-2026-6",
@@ -895,12 +1036,29 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1514362,
+    "noVotes": 1139213,
     "econScore": -0.65,
     "socialScore": 0.0,
     "econReasoning": "This measure increases the TABOR spending cap and directs surplus funds to K-12 public education, reflecting a progressive approach to using state resources for expanded public services rather than tax relief or reduction. The measure prioritizes government spending on education over lower taxes, which aligns with Democratic/left economic preferences.",
     "socialReasoning": "This measure addresses fiscal and education policy and contains no substantive positions on social issues such as abortion, gun rights, LGBTQ+ protections, criminal justice, or other social dimensions.",
     "framingFlag": null,
     "framingNote": null
+  },
+  {
+    "id": "ct-2028-1",
+    "state": "Connecticut",
+    "stateCode": "CT",
+    "year": 2028,
+    "title": "Constitutional Convention Question",
+    "summary": "Asks voters whether a constitutional convention shall be held to propose a revision or amendments to the constitution",
+    "category": "fiscal_tax",
+    "partisan": false,
+    "conservativeDirection": true,
+    "type": "Advisory Constitutional Convention Question",
+    "status": "Qualified",
+    "result": null,
+    "electionDate": "2028-11-07"
   },
   {
     "id": "fl-2026-4",
@@ -915,7 +1073,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 3174295,
+    "noVotes": 4586161
   },
   {
     "id": "fl-2026-5",
@@ -930,7 +1090,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 4547646,
+    "noVotes": 3264960
   },
   {
     "id": "fl-2026-3",
@@ -946,6 +1108,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 4922977,
+    "noVotes": 3020085,
     "econScore": 0.78,
     "socialScore": 0.0,
     "econReasoning": "This measure combines tax cuts for homeowners (homestead exemption increase), property tax caps on non-homestead properties, and spending restrictions on municipal revenue\u2014all hallmark conservative fiscal policies favoring lower taxation and reduced government spending. These provisions align strongly with right-leaning economic philosophy.",
@@ -966,7 +1130,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 2163712,
+    "noVotes": 1854433
   },
   {
     "id": "ga-2026-5",
@@ -981,7 +1147,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 2752872,
+    "noVotes": 1274297
   },
   {
     "id": "ga-2026-6",
@@ -996,7 +1164,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 3135317,
+    "noVotes": 898237
   },
   {
     "id": "hi-2026-3",
@@ -1011,7 +1181,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 227129,
+    "noVotes": 133249
   },
   {
     "id": "hi-2026-4",
@@ -1026,7 +1198,24 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 242255,
+    "noVotes": 117758
+  },
+  {
+    "id": "hi-2028-1",
+    "state": "Hawaii",
+    "stateCode": "HI",
+    "year": 2028,
+    "title": "Constitutional Convention Question",
+    "summary": "Asks voters whether a constitutional convention shall be held to propose a revision or amendments to the constitution",
+    "category": "fiscal_tax",
+    "partisan": false,
+    "conservativeDirection": true,
+    "type": "Advisory Constitutional Convention Question",
+    "status": "Qualified",
+    "result": null,
+    "electionDate": "2028-11-07"
   },
   {
     "id": "id-2026-1",
@@ -1042,6 +1231,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 240832,
+    "noVotes": 472957,
     "econScore": 0.0,
     "socialScore": 0.85,
     "econReasoning": "This measure does not substantively address taxation, spending, regulation of markets, or redistribution. It is purely a matter of legislative authority over drug policy and has no direct economic dimension.",
@@ -1063,6 +1254,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 449061,
+    "noVotes": 262276,
     "econScore": 0.0,
     "socialScore": 0.85,
     "econReasoning": "This measure has no direct economic dimension\u2014it does not involve taxation, spending, regulation of markets, or redistribution of resources.",
@@ -1105,12 +1298,29 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 320210,
+    "noVotes": 406097,
     "econScore": 0.0,
     "socialScore": -0.85,
     "econReasoning": "This measure addresses reproductive rights and privacy but contains no economic policy provisions regarding taxation, spending, regulation, or market mechanisms.",
     "socialReasoning": "This measure explicitly protects abortion rights and reproductive decision-making, which is a core progressive/left position on the social axis. It directly aligns with Democratic and pro-choice advocacy on one of the most polarized social issues in American politics.",
     "framingFlag": null,
     "framingNote": null
+  },
+  {
+    "id": "il-2028-1",
+    "state": "Illinois",
+    "stateCode": "IL",
+    "year": 2028,
+    "title": "Constitutional Convention Question",
+    "summary": "Asks voters whether a constitutional convention shall be held to propose a revision or amendments to the constitution",
+    "category": "fiscal_tax",
+    "partisan": false,
+    "conservativeDirection": true,
+    "type": "Advisory Constitutional Convention Question",
+    "status": "Qualified",
+    "result": null,
+    "electionDate": "2028-11-07"
   },
   {
     "id": "in-2026-1",
@@ -1126,6 +1336,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1063295,
+    "noVotes": 758966,
     "econScore": 0.0,
     "socialScore": 0.75,
     "econReasoning": "This measure has no significant economic dimension; it addresses criminal procedure rather than taxation, spending, regulation, or market mechanisms.",
@@ -1146,7 +1358,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1144687,
+    "noVotes": 684054
   },
   {
     "id": "ia-2026-1",
@@ -1162,6 +1376,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 688127,
+    "noVotes": 535617,
     "econScore": 0.82,
     "socialScore": 0.0,
     "econReasoning": "This measure imposes a supermajority requirement (two-thirds vote) to raise income tax rates, making tax increases significantly harder to pass. This aligns with right-leaning fiscal policy that constrains tax increases and government revenue growth.",
@@ -1183,6 +1399,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-08-04",
+    "yesVotes": 240603,
+    "noVotes": 382118,
     "econScore": 0.0,
     "socialScore": 0.65,
     "econReasoning": "This measure has no direct economic dimension\u2014it concerns the selection mechanism for judges rather than taxation, spending, or market regulation.",
@@ -1204,6 +1422,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 683779,
+    "noVotes": 391416,
     "econScore": 0.0,
     "socialScore": 0.85,
     "econReasoning": "This measure has no meaningful economic dimension\u2014it addresses voting eligibility criteria rather than taxation, spending, regulation, or market policy.",
@@ -1224,7 +1444,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 900017,
+    "noVotes": 373403
   },
   {
     "id": "la-2026-2",
@@ -1240,6 +1462,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-05-16",
+    "yesVotes": 173487,
+    "noVotes": 630337,
     "econScore": 0.55,
     "socialScore": 0.0,
     "econReasoning": "This measure allows the legislature to expand the unclassified civil service by adding officers, positions, and employees, which increases government workforce flexibility and reduces procedural constraints\u2014a deregulatory approach favored by conservatives seeking to reduce civil service protections and union influence. The ability to expand unclassified positions (typically exempt from civil service rules) without restrictions aligns with right-leaning preferences for executive/legislative control over government operations.",
@@ -1261,6 +1485,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-05-16",
+    "yesVotes": 287614,
+    "noVotes": 511787,
     "econScore": 0.0,
     "socialScore": 0.0,
     "econReasoning": "This measure adds a specific school system to a list of systems treated as parishes for operational purposes, a technical governance classification with no significant implications for taxation, redistribution, regulation, or market-driven policy.",
@@ -1282,6 +1508,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-05-16",
+    "yesVotes": 340362,
+    "noVotes": 470837,
     "econScore": 0.55,
     "socialScore": 0.0,
     "econReasoning": "This measure redirects existing education revenue funds toward the Teachers' Retirement System, which is a fiscal restructuring that aligns with conservative priorities of controlling public spending and addressing pension liabilities without raising new revenue. The reallocation reflects a right-leaning approach to managing government expenditures and benefits.",
@@ -1303,6 +1531,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-05-16",
+    "yesVotes": 272515,
+    "noVotes": 530799,
     "econScore": 0.75,
     "socialScore": 0.0,
     "econReasoning": "This measure allows parishes to exempt business inventory from property taxes, which is a tax cut favoring business interests and aligns with right-leaning fiscal policy priorities of reducing tax burdens on commerce and private enterprise.",
@@ -1324,6 +1554,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-05-16",
+    "yesVotes": 188765,
+    "noVotes": 618097,
     "econScore": 0.0,
     "socialScore": 0.0,
     "econReasoning": "This measure adjusts the mandatory retirement age for judges and has no direct impact on taxation, spending, regulation, or market mechanisms. The fiscal implications (if any) are negligible and administratively neutral.",
@@ -1344,7 +1576,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1071821,
+    "noVotes": 371398
   },
   {
     "id": "la-2026-17",
@@ -1359,7 +1593,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 659484,
+    "noVotes": 749477
   },
   {
     "id": "la-2026-18",
@@ -1374,7 +1610,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 596656,
+    "noVotes": 824812
   },
   {
     "id": "la-2026-19",
@@ -1389,7 +1627,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 972731,
+    "noVotes": 461882
   },
   {
     "id": "la-2026-20",
@@ -1404,7 +1644,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 801623,
+    "noVotes": 631679
   },
   {
     "id": "la-2026-21",
@@ -1419,7 +1661,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 526852,
+    "noVotes": 875000
   },
   {
     "id": "la-2026-22",
@@ -1434,7 +1678,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 900864,
+    "noVotes": 516528
   },
   {
     "id": "la-2026-23",
@@ -1449,7 +1695,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 924795,
+    "noVotes": 492522
   },
   {
     "id": "la-2026-24",
@@ -1464,7 +1712,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 877475,
+    "noVotes": 535187
   },
   {
     "id": "la-2026-25",
@@ -1479,7 +1729,24 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 824244,
+    "noVotes": 592172
+  },
+  {
+    "id": "la-2027-1",
+    "state": "Louisiana",
+    "stateCode": "LA",
+    "year": 2027,
+    "title": "Supreme Court Jurisdiction for Lawyer Disciplinary Proceedings Amendment",
+    "summary": "Expand the Louisiana Supreme Court\u2019s constitutional authority over lawyer disciplinary proceedings to include certain lawyers who are not members of the state bar",
+    "category": "fiscal_tax",
+    "partisan": true,
+    "conservativeDirection": false,
+    "type": "Legislatively Referred Constitutional Amendment",
+    "status": "Qualified",
+    "result": null,
+    "electionDate": "2027-04-17"
   },
   {
     "id": "md-2026-5",
@@ -1494,7 +1761,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1584338,
+    "noVotes": 497018
   },
   {
     "id": "md-2026-6",
@@ -1509,7 +1778,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1428019,
+    "noVotes": 661346
   },
   {
     "id": "md-2026-7",
@@ -1524,7 +1795,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1329997,
+    "noVotes": 818704
   },
   {
     "id": "ma-2026-2",
@@ -1540,6 +1813,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 2204690,
+    "noVotes": 361223,
     "econScore": 0.0,
     "socialScore": -0.65,
     "econReasoning": "This measure has no direct economic dimension\u2014it concerns government transparency and record access rather than taxation, spending, or market regulation.",
@@ -1561,6 +1836,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1621264,
+    "noVotes": 912004,
     "econScore": -0.75,
     "socialScore": 0.0,
     "econReasoning": "Collective bargaining rights for public employees typically increase labor costs and strengthen worker protections through unionization, which aligns with left-leaning economic preferences for worker power and redistribution. This measure expands bargaining rights for state-employed public defenders, a traditionally pro-labor position.",
@@ -1582,6 +1859,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1001466,
+    "noVotes": 1568861,
     "econScore": 0.0,
     "socialScore": -0.45,
     "econReasoning": "This measure has no direct economic dimension\u2014it does not address taxation, spending, regulation, or market mechanisms. It is purely procedural.",
@@ -1603,6 +1882,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1448697,
+    "noVotes": 1121515,
     "econScore": 0.0,
     "socialScore": -0.75,
     "econReasoning": "Same-day voter registration has minimal direct economic impact. It does not involve taxation, spending, regulation of markets, or redistribution of economic resources.",
@@ -1624,6 +1905,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1211076,
+    "noVotes": 1328039,
     "econScore": 0.75,
     "socialScore": 0.0,
     "econReasoning": "This measure would cap state revenue collection, a signature conservative fiscal policy position aligned with limiting government size and spending. Revenue caps restrict the state's ability to fund public programs and are strongly favored by right-leaning advocates for limited government and low taxes.",
@@ -1645,6 +1928,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1550437,
+    "noVotes": 998261,
     "econScore": -0.65,
     "socialScore": 0.0,
     "econReasoning": "Creating a dedicated state fund for nature conservation represents public sector spending and environmental regulation, positions typically associated with progressive/Democratic policy. This requires state funding mechanisms and represents government-directed environmental stewardship rather than market-based or private approaches.",
@@ -1666,6 +1951,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1258029,
+    "noVotes": 1290724,
     "econScore": 0.65,
     "socialScore": 0.0,
     "econReasoning": "This measure constrains local zoning regulations and reduces municipal control over land-use policy, aligning with right-wing deregulation principles and private property rights. It removes barriers to market-driven housing development and reduces government restrictions on land use.",
@@ -1687,6 +1974,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 633790,
+    "noVotes": 1967235,
     "econScore": 0.0,
     "socialScore": 0.85,
     "econReasoning": "The measure has minimal direct economic impact; it primarily addresses regulatory and criminal justice policy rather than taxation, redistribution, or market structure.",
@@ -1708,12 +1997,29 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1758939,
+    "noVotes": 853079,
     "econScore": -0.15,
     "socialScore": -0.75,
     "econReasoning": "The measure includes modest regulatory costs for firearms manufacturers and sellers, but does not substantially redistribute resources or alter tax policy. The economic dimension is minimal.",
     "socialReasoning": "H. 4885 implements gun control measures including universal background checks, permit requirements, and restrictions on certain firearms\u2014positions strongly aligned with the Democratic/progressive platform. This measure would be backed by gun control advocates and opposed by gun rights advocates.",
     "framingFlag": null,
     "framingNote": null
+  },
+  {
+    "id": "ma-2028-1",
+    "state": "Massachusetts",
+    "stateCode": "MA",
+    "year": 2028,
+    "title": "Abortion Regulations After 24 Weeks' Gestation Referendum",
+    "summary": "Repeal Massachusetts House Bill 5595, which removes restrictions on abortions after 24 weeks gestation",
+    "category": "social_rights",
+    "partisan": false,
+    "conservativeDirection": true,
+    "type": "Voter Referendum",
+    "status": "Qualified",
+    "result": null,
+    "electionDate": "2028-11-07"
   },
   {
     "id": "mi-2026-2",
@@ -1728,7 +2034,9 @@
     "type": "Advisory Constitutional Convention Question",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1119008,
+    "noVotes": 3144066
   },
   {
     "id": "mi-2026-3",
@@ -1743,7 +2051,9 @@
     "type": "Citizen-Initiated State Statute",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 3531044,
+    "noVotes": 812419
   },
   {
     "id": "mn-2026-2",
@@ -1758,7 +2068,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 2069087,
+    "noVotes": 666712
   },
   {
     "id": "mo-2026-7",
@@ -1774,6 +2086,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-08-04",
+    "yesVotes": 1141865,
+    "noVotes": 245778,
     "econScore": -0.35,
     "socialScore": 0.0,
     "econReasoning": "This measure renews an existing modest sales tax (0.1%) for public environmental and recreational programs, reflecting a left-leaning preference for public funding of services. However, the tax rate is very small and renewal of existing authority (rather than expansion) moderates the leftward lean.",
@@ -1795,6 +2109,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-08-04",
+    "yesVotes": 1042413,
+    "noVotes": 312713,
     "econScore": 0.35,
     "socialScore": 0.0,
     "econReasoning": "Electing the Jackson County Assessor rather than appointing them reflects a preference for direct democratic accountability over bureaucratic appointment, which aligns with conservative skepticism of unelected administrative positions. However, this is a local governance structure change with modest fiscal implications rather than a significant economic policy position.",
@@ -1816,6 +2132,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-08-04",
+    "yesVotes": 275040,
+    "noVotes": 1122748,
     "econScore": 0.0,
     "socialScore": 0.65,
     "econReasoning": "This measure addresses ballot initiative procedures and campaign finance rules rather than taxation, spending, or economic distribution. It has no material economic policy dimension.",
@@ -1837,6 +2155,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-08-04",
+    "yesVotes": 233965,
+    "noVotes": 1165085,
     "econScore": 0.82,
     "socialScore": 0.0,
     "econReasoning": "This measure phases out individual income tax contingent on revenue growth, representing a significant tax cut aligned with Republican economic priorities of reduced government revenue and lower tax burdens. The proposal to eliminate a major revenue source reflects conservative fiscal policy emphasizing tax reduction and smaller government.",
@@ -1858,6 +2178,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 944084,
+    "noVotes": 1174335,
     "econScore": 0.0,
     "socialScore": 0.85,
     "econReasoning": "This measure has no significant economic dimension; it does not address taxation, regulation, public spending, or market structure.",
@@ -1878,7 +2200,9 @@
     "type": "Citizen-Initiated Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1253095,
+    "noVotes": 838200
   },
   {
     "id": "mo-2026-12",
@@ -1893,7 +2217,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 818054,
+    "noVotes": 1253729
   },
   {
     "id": "mo-2026-13",
@@ -1908,7 +2234,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1056289,
+    "noVotes": 1013747
   },
   {
     "id": "mo-2026-14",
@@ -1923,7 +2251,9 @@
     "type": "Voter Referendum",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 788369,
+    "noVotes": 1275558
   },
   {
     "id": "mt-2026-1",
@@ -1938,7 +2268,9 @@
     "type": "Citizen-Initiated Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 328015,
+    "noVotes": 152820
   },
   {
     "id": "mt-2026-2",
@@ -1953,7 +2285,9 @@
     "type": "Citizen-Initiated Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 308472,
+    "noVotes": 163127
   },
   {
     "id": "mt-2026-3",
@@ -1968,7 +2302,9 @@
     "type": "Citizen-Initiated State Statute",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 307039,
+    "noVotes": 161247
   },
   {
     "id": "ne-2026-2",
@@ -1983,7 +2319,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 136921,
+    "noVotes": 598513
   },
   {
     "id": "ne-2026-3",
@@ -1998,7 +2336,9 @@
     "type": "Citizen-Initiated Constitutional Amendment",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 340042,
+    "noVotes": 413433
   },
   {
     "id": "ne-2026-4",
@@ -2013,7 +2353,9 @@
     "type": "Citizen-Initiated State Statute",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 343203,
+    "noVotes": 410215
   },
   {
     "id": "ne-2026-5",
@@ -2028,7 +2370,9 @@
     "type": "Citizen-Initiated Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 504620,
+    "noVotes": 241149
   },
   {
     "id": "nv-2026-1",
@@ -2044,6 +2388,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 678152,
+    "noVotes": 388571,
     "econScore": 0.0,
     "socialScore": -0.85,
     "econReasoning": "This measure has no significant economic dimension; it establishes a constitutional right but does not involve taxation, spending, regulation of markets, or redistribution of resources.",
@@ -2065,6 +2411,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 667463,
+    "noVotes": 406720,
     "econScore": 0.0,
     "socialScore": 0.85,
     "econReasoning": "This measure has no direct economic dimension\u2014it imposes procedural requirements for voting but does not address taxation, spending, regulation of markets, or wealth redistribution.",
@@ -2086,6 +2434,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 366633,
+    "noVotes": 199425,
     "econScore": 0.65,
     "socialScore": 0.0,
     "econReasoning": "Eliminating a state office reduces government bureaucracy and overhead, which aligns with conservative/Republican preference for smaller government and fiscal efficiency. This represents a cost-cutting measure that typically appeals to those favoring leaner public administration.",
@@ -2106,7 +2456,9 @@
     "type": "Bond Issue",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 453903,
+    "noVotes": 197981
   },
   {
     "id": "nm-2026-9",
@@ -2121,7 +2473,9 @@
     "type": "Bond Issue",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 427655,
+    "noVotes": 220414
   },
   {
     "id": "nm-2026-10",
@@ -2136,7 +2490,9 @@
     "type": "Bond Issue",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 416062,
+    "noVotes": 231046
   },
   {
     "id": "nm-2026-11",
@@ -2151,7 +2507,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 497904,
+    "noVotes": 165277
   },
   {
     "id": "nm-2026-12",
@@ -2166,7 +2524,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 426862,
+    "noVotes": 231687
   },
   {
     "id": "nm-2026-13",
@@ -2181,7 +2541,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 445110,
+    "noVotes": 191138
   },
   {
     "id": "nm-2026-14",
@@ -2196,7 +2558,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 418548,
+    "noVotes": 240995
   },
   {
     "id": "nc-2026-2",
@@ -2212,6 +2576,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 2503657,
+    "noVotes": 1640176,
     "econScore": 0.72,
     "socialScore": 0.0,
     "econReasoning": "Property tax levy limits are a fiscally conservative measure aligned with Republican tax-restraint policy. This constrains government revenue growth and reduces public sector funding capacity, consistent with right-aligned tax limitation preferences.",
@@ -2233,6 +2599,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 2571372,
+    "noVotes": 1580808,
     "econScore": 0.85,
     "socialScore": 0.0,
     "econReasoning": "This measure reduces the constitutional cap on income tax rates from 7% to 3.5%, constraining the state's ability to raise revenue through progressive taxation. This aligns strongly with conservative economic positions favoring lower taxes and reduced government revenue.",
@@ -2254,6 +2622,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 2474593,
+    "noVotes": 1676587,
     "econScore": 0.0,
     "socialScore": 0.85,
     "econReasoning": "This measure has no direct economic dimension\u2014it addresses voting procedures rather than taxation, spending, or market regulation.",
@@ -2275,6 +2645,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-06-09",
+    "yesVotes": 77141,
+    "noVotes": 38995,
     "econScore": 0.0,
     "socialScore": 0.0,
     "econReasoning": "This measure addresses procedural rules for constitutional amendments and contains no provisions affecting taxation, spending, redistribution, or market regulation.",
@@ -2296,6 +2668,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 101798,
+    "noVotes": 132169,
     "econScore": 0.0,
     "socialScore": 0.0,
     "econReasoning": "This measure concerns legislative term limits and constitutional amendment procedures, which do not directly address taxation, spending, regulation, or market-driven economic policy. The economic dimension is neutral.",
@@ -2317,6 +2691,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 116477,
+    "noVotes": 119309,
     "econScore": 0.0,
     "socialScore": 0.0,
     "econReasoning": "This measure establishes a procedural requirement for constitutional amendments and does not directly address taxation, spending, regulation, or economic redistribution. It is neutral on the economic axis.",
@@ -2338,6 +2714,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 2934245,
+    "noVotes": 1556864,
     "econScore": 0.0,
     "socialScore": 0.85,
     "econReasoning": "Voter ID requirements have no direct economic dimension regarding taxation, spending, or market regulation. This measure does not significantly impact fiscal or economic policy.",
@@ -2359,6 +2737,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-06-16",
+    "yesVotes": 281386,
+    "noVotes": 349102,
     "econScore": -0.78,
     "socialScore": 0.0,
     "econReasoning": "Minimum wage increases are a core progressive/left economic policy that redistributes income upward to lower-wage workers and increases labor regulation on employers. This aligns with Democratic and labor-oriented positions that prioritize worker protections over market-driven wage determination.",
@@ -2380,6 +2760,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-08-25",
+    "yesVotes": 138814,
+    "noVotes": 389886,
     "econScore": -0.45,
     "socialScore": 0.0,
     "econReasoning": "This measure requires the state to reimburse local entities for revenue losses from manufacturing tax exemptions, effectively limiting the fiscal benefit of those exemptions and shifting costs toward the state budget. While manufacturing tax exemptions themselves are business-friendly (conservative), this measure constrains their implementation by imposing a compensatory funding requirement, reflecting a more cautious fiscal approach aligned with protecting public revenues.",
@@ -2401,6 +2783,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-08-25",
+    "yesVotes": 292599,
+    "noVotes": 243159,
     "econScore": 0.0,
     "socialScore": 0.85,
     "econReasoning": "Voter ID requirements have no direct economic dimension\u2014they do not involve taxation, spending, regulation of markets, or redistribution of resources.",
@@ -2422,6 +2806,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 294462,
+    "noVotes": 777246,
     "econScore": 0.0,
     "socialScore": 0.55,
     "econReasoning": "This measure concerns judicial appointment procedures and does not directly address taxation, spending, regulation, or market mechanisms, placing it outside the economic axis.",
@@ -2443,12 +2829,29 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 493467,
+    "noVotes": 585734,
     "econScore": 0.72,
     "socialScore": 0.0,
     "econReasoning": "This measure reduces the annual growth limit of property tax assessments, which constrains government revenue and favors property owners over public funding\u2014a characteristic conservative/Republican fiscal position. Property tax caps are typically championed by the right as tax relief and limitation of government expansion.",
     "socialReasoning": "This measure has no social dimension; it is purely a fiscal/taxation policy with no bearing on social issues such as abortion, gun rights, criminal justice, voting rights, or other socially polarizing topics.",
     "framingFlag": "revenue_impact",
     "framingNote": "The measure frames the effect as reducing 'annual growth' in property valuations, which obscures that this functions as a de facto property tax cap that reduces government revenue and shifts the tax burden over time."
+  },
+  {
+    "id": "ok-2027-1",
+    "state": "Oklahoma",
+    "stateCode": "OK",
+    "year": 2027,
+    "title": "State Question 848",
+    "summary": "Call a state constitutional convention",
+    "category": "fiscal_tax",
+    "partisan": false,
+    "conservativeDirection": true,
+    "type": "Advisory Constitutional Convention Question",
+    "status": "Qualified",
+    "result": null,
+    "electionDate": "2027-04-06"
   },
   {
     "id": "or-2026-1",
@@ -2464,6 +2867,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-05-19",
+    "yesVotes": 207066,
+    "noVotes": 1012663,
     "econScore": 0.82,
     "socialScore": 0.0,
     "econReasoning": "This referendum seeks to repeal tax increases (gas tax, payroll tax, vehicle registration fees), which aligns with right-leaning fiscal policy favoring lower taxes and reduced government revenue. The measure directly opposes progressive revenue-raising mechanisms established in HB 3991.",
@@ -2484,7 +2889,9 @@
     "type": "Bond Issue",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 209110,
+    "noVotes": 139303
   },
   {
     "id": "ri-2026-7",
@@ -2499,7 +2906,9 @@
     "type": "Bond Issue",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 213183,
+    "noVotes": 134355
   },
   {
     "id": "ri-2026-8",
@@ -2514,7 +2923,9 @@
     "type": "Bond Issue",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 162914,
+    "noVotes": 178645
   },
   {
     "id": "ri-2026-9",
@@ -2529,7 +2940,9 @@
     "type": "Bond Issue",
     "status": "Qualified",
     "result": null,
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 170378,
+    "noVotes": 174510
   },
   {
     "id": "ri-2026-10",
@@ -2544,7 +2957,9 @@
     "type": "Bond Issue",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 232619,
+    "noVotes": 114027
   },
   {
     "id": "sd-2026-1",
@@ -2560,6 +2975,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 131202,
+    "noVotes": 165420,
     "econScore": 0.72,
     "socialScore": 0.0,
     "econReasoning": "This measure constrains Medicaid expansion by conditioning it on federal funding remaining at or above 90%, effectively limiting the state's ability to expand public healthcare coverage. This aligns with Republican/right-leaning fiscal conservatism that resists public program expansion and prioritizes fiscal constraint over healthcare access.",
@@ -2581,6 +2998,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 183765,
+    "noVotes": 114928,
     "econScore": 0.0,
     "socialScore": 0.85,
     "econReasoning": "This measure has no direct economic dimension\u2014it addresses voting eligibility rather than taxation, spending, regulation, or market policy.",
@@ -2602,6 +3021,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 178578,
+    "noVotes": 114481,
     "econScore": 0.15,
     "socialScore": 0.0,
     "econReasoning": "Establishing an unclaimed property trust fund is a modest fiscal management measure that involves state stewardship of dormant assets rather than redistribution or tax policy. It has a slightly conservative orientation toward property rights and fund management but lacks significant ideological economic content.",
@@ -2623,6 +3044,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 126175,
+    "noVotes": 171362,
     "econScore": 0.0,
     "socialScore": 0.0,
     "econReasoning": "This measure concerns the procedural threshold for approving constitutional amendments and has no direct economic dimension regarding taxation, spending, regulation, or market policy.",
@@ -2644,6 +3067,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1330845,
+    "noVotes": 651321,
     "econScore": 0.0,
     "socialScore": 0.85,
     "econReasoning": "This measure has no direct economic dimension; it does not involve taxation, spending, regulation of markets, or redistribution of resources.",
@@ -2665,6 +3090,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1334067,
+    "noVotes": 664715,
     "econScore": 0.85,
     "socialScore": 0.0,
     "econReasoning": "This measure prohibits property taxation by the state legislature, a core tax-cut and anti-government-revenue position strongly aligned with Republican/right fiscal ideology. Removing a major revenue source constrains government spending and reflects market-oriented tax policy preferences.",
@@ -2686,6 +3113,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 1526306,
+    "noVotes": 480508,
     "econScore": 0.0,
     "socialScore": 0.65,
     "econReasoning": "This measure addresses constitutional rights enumeration for crime victims and has no direct economic dimension regarding taxation, spending, or market regulation.",
@@ -2706,7 +3135,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 617693,
+    "noVotes": 395037
   },
   {
     "id": "ut-2026-4",
@@ -2721,7 +3152,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 393945,
+    "noVotes": 627987
   },
   {
     "id": "vt-2026-1",
@@ -2737,6 +3170,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 215707,
+    "noVotes": 76044,
     "econScore": -0.85,
     "socialScore": 0.0,
     "econReasoning": "Labor organizing and collective bargaining rights are core left-aligned economic positions that redistribute power from employers to workers and typically increase labor costs and regulation. This constitutional protection would strengthen union organizing capacity, a signature Democratic/progressive economic priority.",
@@ -2758,6 +3193,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 230396,
+    "noVotes": 62737,
     "econScore": 0.0,
     "socialScore": -0.85,
     "econReasoning": "This measure has no economic dimension\u2014it establishes anti-discrimination protections in rights and does not address taxation, regulation, spending, or market mechanisms.",
@@ -2776,9 +3213,11 @@
     "partisan": false,
     "conservativeDirection": true,
     "type": "Legislatively Referred Constitutional Amendment",
-    "status": "Qualified",
-    "result": null,
+    "status": "Overturned",
+    "result": "Overturned",
     "electionDate": "2026-04-21",
+    "yesVotes": 1604276,
+    "noVotes": 1499393,
     "econScore": 0.0,
     "socialScore": 0.65,
     "econReasoning": "This measure concerns the procedural mechanism for redistricting and has no direct economic policy content regarding taxation, spending, or market regulation.",
@@ -2800,6 +3239,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 2260108,
+    "noVotes": 1334931,
     "econScore": 0.0,
     "socialScore": -0.85,
     "econReasoning": "This measure addresses reproductive rights and does not contain economic provisions regarding taxation, regulation, or market structure. It has no significant economic dimension.",
@@ -2821,6 +3262,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 2100100,
+    "noVotes": 1527939,
     "econScore": 0.0,
     "socialScore": -0.85,
     "econReasoning": "This measure has no economic dimension; it concerns marriage law and licensing rather than taxation, spending, regulation, or market policy.",
@@ -2842,6 +3285,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 2061741,
+    "noVotes": 1558951,
     "econScore": 0.0,
     "socialScore": -0.85,
     "econReasoning": "This measure has no significant economic dimension; it concerns voting rights restoration rather than taxation, spending, regulation, or market mechanisms.",
@@ -2862,7 +3307,9 @@
     "type": "Indirect Initiative State Statute",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1478123,
+    "noVotes": 1626774
   },
   {
     "id": "wa-2026-5",
@@ -2877,7 +3324,9 @@
     "type": "Indirect Initiative State Statute",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1774564,
+    "noVotes": 1397005
   },
   {
     "id": "wa-2026-6",
@@ -2892,7 +3341,9 @@
     "type": "Citizen-Initiated State Statute",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1340827,
+    "noVotes": 1850642
   },
   {
     "id": "wv-2026-1",
@@ -2908,6 +3359,8 @@
     "status": "Passed",
     "result": "Passed",
     "electionDate": "2026-11-03",
+    "yesVotes": 342330,
+    "noVotes": 88064,
     "econScore": 0.0,
     "socialScore": 0.85,
     "econReasoning": "This measure has no economic dimension; it does not address taxation, spending, regulation, or market mechanisms.",
@@ -2928,7 +3381,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1308835,
+    "noVotes": 1270123
   },
   {
     "id": "wi-2026-5",
@@ -2943,7 +3398,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Failed",
     "result": "Failed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1244742,
+    "noVotes": 1344295
   },
   {
     "id": "wi-2026-6",
@@ -2958,7 +3415,9 @@
     "type": "Legislatively Referred Constitutional Amendment",
     "status": "Passed",
     "result": "Passed",
-    "electionDate": "2026-11-03"
+    "electionDate": "2026-11-03",
+    "yesVotes": 1452551,
+    "noVotes": 1119646
   },
   {
     "id": "wy-2026-2",
@@ -2974,6 +3433,8 @@
     "status": "Failed",
     "result": "Failed",
     "electionDate": "2026-11-03",
+    "yesVotes": 80047,
+    "noVotes": 105209,
     "econScore": 0.75,
     "socialScore": 0.0,
     "econReasoning": "This measure reduces property tax revenue by exempting 50% of primary residence assessed values, a direct tax cut that aligns with conservative fiscal policy prioritizing reduced taxation and homeowner benefits. The exemption favors private property ownership and reduces public revenue, consistent with right-leaning economic approaches.",
